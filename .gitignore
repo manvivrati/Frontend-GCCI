@@ -1,0 +1,22 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# migrations
+
+**/migrations/*.py
+*/migrations/*.py
+.idea/*
+.vscode/*
+.vscode/settings.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
