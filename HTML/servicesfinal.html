@@ -10,12 +10,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="swiper.min.css">
         <link rel="stylesheet" href="stylefinal.css">
     </head>
 
-    <body>
+    <body style="font-size: 1.2rem;">
         <!-- Navbar -->
         <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -40,50 +38,51 @@
             </div>
         </nav>
     </header>
-
     <main>
-        <div class="container-fluid">
-
-        <section class="" id="parallax">
-            <div class="container-fluid mt-5 pt-5">
-                <div class="row">
-                    <h1 class="">Services</h1>
-                    <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM, we adopt the
+        <!-- Top Carousel -->
+        <div class="mt-4 pt-5">
+            <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="/images/Banner 1.jpg 1x, /images/Banner 2.jpg 2x">
+                        <img src="images/Banner%201.jpg" alt="" class="responsive">
+                    </picture>
+                    </div>
+                </div>
+                    <div class="services_text">
+                        <h1 class="text-light" style="font-size: xxx-large"><b>SERVICES</b></h1>
+                        <p><i>As the consulting firm that contributed to the foundations of Lean/TPS and TPM, we adopt the
                        principles of Lean thinking in our consulting projects across all industries and processes.<br>
                         Our well-versed consultants offer training programs filled with know-how on problem solving
-                        for business challenges, leveraging their consultation experience.</p>
-                </div>
-            </div>
-        </section>
-        <div class="bigHeader bigHeader-services">
-            <div class="bigHeaderInner">
-                <h1 class="bigHeader_heading">Services</h1>
-                <div class="bigHeaer_lead">
-                    <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM, we adopt the
-                      principles of Lean thinking in our consulting projects across all industries and processes.<br>
-                      Our well-versed consultants offer training programs filled with know-how on problem solving
-                      for business challenges, leveraging their consultation experience.</p>
-                </div>
+                        for business challenges, leveraging their consultation experience.</i></p>
+                    </div>
             </div>
         </div>
-        <ul class="anchorLinks mini">
-            <li><a class="" href="#consulting">Consulting</a></li>
-            <li><a class="" href="#training">Training</a></li>
-        </ul>
-        <section id="consulting">
-            <h2 class="secHeadingLv1">Consulting</h2>
-            <section class="smallSection sectionStyle">
-                <div class="section_inner">
-                    <h3 class="secHeadingLv2">An integrated consulting firm for all business challenges</h3>
-                    <p>JMAC has made meaningful contributions to the growth of Japanese industry.
-                        Today, JMAC provides a wide range of consulting services in production, R&amp;D, service/sales,
-                        strategy, organizational development and HR to clients regardless of size,
-                        across industries, and geographic regions.</p>
+        <div class="container-fluid">
+            <!-- Buttons -->
+            <center>
+                <div class="btn-group btn-group-lg" role="group">
+                    <a type="button" class="btn service_btn" href="#consulting"><h5>Counsulting</h5></a>
+                        <a type="button" class="btn service_btn" href="#training"><h5>Training</h5></a>
                 </div>
-            </section>
-            <section class="smallSection sectionStyle mb0">
-                <div class="section_inner">
-                    <h3 class="secHeadingLv2">Providing the Right Choices for Our Clients</h3>
+            </center>
+
+            <!-- Consulting -->
+            <div id="consulting">
+                <div class="container">
+                    <br/>
+                    <h2 class="heading" style="color: #093a8c;">Consulting</h2>
+
+                    <h2><b>An integrated consulting firm for all business challenges</b></h2>
+                    <hr/>
+                        <p>JMAC has made meaningful contributions to the growth of Japanese industry.
+                            Today, JMAC provides a wide range of consulting services in production, R&amp;D, service/sales,
+                            strategy, organizational development and HR to clients regardless of size,
+                            across industries, and geographic regions.</p><br/>
+
+                    <h2><b>Providing the Right Choices for Our Clients</b></h2>
+                    <hr/>
                     <p>JMAC begins by developing a clear understanding of its client’s back ground and objectives.
                         Following from this, JMAC delves into a deep understanding of their client’s
                         organizational culture and corporate structure.
@@ -91,12 +90,10 @@
                         solutions and action plans.
                         <br>This is how JMAC achieves the results that clients expect. JMAC makes this possible
                         through combining highly skilled and experienced consultants with the expert knowledge
-                        accumulated within the firm.</p>
-                </div>
-            </section>
-            <section class="smallSection sectionStyle mb0">
-                <div class="section_inner">
-                    <h3 class="secHeadingLv2">Our Consulting Philosophy</h3>
+                        accumulated within the firm.</p><br/>
+
+                    <h2><b>Our Consulting Philosophy</b></h2>
+                    <hr/>
                     <p>JMAC adheres to three principles in its proven approach to business process innovation.
                         First is Process Orientation. Our consultants know that truth is found on the shop
                         floor – what the Japanese call “gemba”. Whether an actual “production” floor, an office, or
@@ -110,45 +107,72 @@
                         eliminating waste is vitally important. JMAC has been a leader in developing Lean Manufacturing
                         concepts and has successfully implemented lean concepts in many companies.</p>
                 </div>
-          </section>
-        </section>
-        <section class="section services">
-            <h2 class="headingLv2">Services</h2>
-            <section class="section consulting">
-                <div class="section_inner section_inner-s">
-                    <h3 class="headingLv3">Consulting</h3>
-                    <div class="section_desc">
-                        <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
-                            <span class="br hiddenSp"></span>we adopt the principles of Lean thinking in our
-                            consulting projects across all industries and processes.</p>
+            </div>
+
+            <!-- Services -->
+            <h2 class="heading">Services</h2>
+            <div class="mt-4 pt-5">
+                <div class="carousel slide pointer-event" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="images/about_jmac.jpg" alt="" class="services">
+                        </div>
+                        <div class="services_text">
+                            <div class="row services">
+                            <center>
+                                <h3 class="heading" style="font-size: 3rem; color: white;">Consulting</h3>
+                                <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
+                                    <span class="br hiddenSp"></span>we adopt the principles of Lean thinking in our consulting
+                                    projects across all industries and processes.</p>
+                            </center>
+                            </div>
+                            <div class="row services">
+                                <div class="col-md-6">
+                                    <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="">
+                                        Lean Manufacturing</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="">
+                                        Smart Factory / IoT</a>
+                                </div>
+                            </div>
+                            <div class="row services">
+                                <div class="col-md-12">
+                                    <a class="btn emptyBtn" href="">TPM</a>
+                                </div>
+                            </div>
+                            <div class="row services">
+                                <div class="col-md-6">
+                                    <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="">
+                                        Innovation Management</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="">
+                                        Service &amp; Sales Innovation</a>
+                                </div>
+                            </div>
+                            <div class="row services">
+                                <div class="col-md-6">
+                                    <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="">
+                                        Organization &amp; HR</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="">
+                                        Japan Market Entry</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="consulting_item">
-                        <ul class="consulting_btnList">
-                            <li><a href="">Lean Manufacturing</a></li>
-                            <li><a href="">Smart Factory / IoT</a></li>
-                        </ul>
-                    </div>
-                <div class="consulting_item">
-                    <ul class="consulting_btnList">
-                        <li><a href="" target="">TPM</a></li>
-                    </ul>
                 </div>
-                <div class="consulting_item">
-                    <ul class="consulting_btnList">
-                        <li><a href="">Innovation Management</a></li>
-                        <li><a href="">Service &amp; Sales Innovation</a></li>
-                        <li><a href="">Organization &amp; HR</a></li>
-                        <li><a href="">Japan Market Entry</a></li>
-                    </ul>
-                </div>
-                </div>
-            </section>
-        </section>
-        <section id="training">
-            <h2 class="secHeadingLv1">Training</h2>
-            <section class="smallSection sectionStyle">
-                <div class="section_inner">
-                    <h2 class="secHeadingLv2">JMAC's view about training</h2>
+            </div>
+
+            <!-- Training -->
+            <div id="training">
+                <div class="container">
+                    <br/>
+                    <h2 class="heading" style="color: #093a8c;">Training</h2>
+                    <h1><b>JMAC's view about training</b></h1>
+                    <hr/>
                     <p>JMAC provides training in Dojo style.<br>Dojo (Do= Way, path; Jo=place) means
                         "the place where you practice the way".</p>
                     <p>Reminding of the place under the tree where it is believed that the Buddha received
@@ -161,76 +185,86 @@
                         In our view, effective training is closely linked to the practical application of the lessons
                         learned. It is from application that you can understand and learn the
                         methodology and its theoretical basis.</p>
-                    <p class="taC imageWrap">
-                        <picture>
+                    <center><picture>
                             <source media="(min-width: 768px)" srcset="/images/top 2.jpg 1x, /images/top 2@2x.jpg 2x">
-                            <img src="./images/top%202.jpg" alt="">
-                        </picture>
-                    </p>
+                            <img src="./images/top%202.jpg" alt="" class="image">
+                    </picture></center>
                     <p>Therefore, the training offered by JMAC aims at supporting the change program being
                         undertaken by companies and is a main part of our operations management consulting.
                         For this reason we have developed an original approach to training, made up of unique solutions,
-                        highly interactive and completely based on the "LEARN BY DOING" concept.</p>
-                    <p class="taC imageWrap">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="/images/top 3.jpg 1x, /images/top 3@2x.jpg 2x">
-                            <img src="./images/top%203.jpg" alt="">
-                        </picture>
+                        highly interactive and completely based on the "LEARN BY DOING" concept.
                     </p>
+                     <center><picture>
+                            <source media="(min-width: 768px)" srcset="/images/top 2.jpg 1x, /images/top 2@2x.jpg 2x">
+                            <img src="./images/top%203.jpg" alt="" class="image">
+                    </picture></center>
                 </div>
-            </section>
-        </section>
-        <div class="pageLinks col2">
-            <div class="pageLinks_inner">
-                <p class="pageLinks_heading">Training</p>
-                <ul class="btnList">
-                    <li><a href="">Training for Manufactures</a></li>
-                    <li><a href="">P-Cource</a></li>
-                    <li><a href="">Kart Factory</a></li>
-                    <li><a href="" target="">TPM Training</a></li>
-                </ul>
+                <div class="row" style="background-color: #e6fbff; height: 35%;">
+                    <div class="container">
+                        <h1 class="image"><b>TRAINING</b></h1>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="btn train_Btn" href="">
+                                    <b>Training for Manufactures</b></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn train_Btn" href="">
+                                    <b>P-Course</b></a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn train_Btn" href="">
+                                    <b>Kart Factory</b></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="btn train_Btn" href="" style="margin-bottom: 15%">
+                                    <b>TPM Training</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <!-- Locations -->
-        <h2 class="heading">Locations</h2>
-        <center>
-            <div class="row justify-content-center">
-                <p>JMAC currently has five subsidiaries; two in China, and one in Thailand, South Korea, and Italy respectively.
-                      <br>We provide services in every country by dispatching consultants from any one of our global offices.</p>
-            </div>
-            <div>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="/images/Banner 1.jpg 1x, /images/Banner 2.jpg 2x">
-                  <img src="images/img_locations.jpeg" alt="" class="map">
-              </picture>
-            </div>
-            <a class="btn fillBtn" href="">See More</a>
-        </center>
+            <!-- Locations -->
+            <h2 class="heading">Locations</h2>
+            <center>
+                <div class="row justify-content-center">
+                    <p>JMAC currently has five subsidiaries; two in China, and one in Thailand, South Korea, and Italy respectively.
+                       <br>We provide services in every country by dispatching consultants from any one of our global offices.</p>
+                </div>
+                <div>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="/images/Banner 1.jpg 1x, /images/Banner 2.jpg 2x">
+                      <img src="images/img_locations.jpeg" alt="" class="map">
+                  </picture>
+                </div>
+                <a class="btn fillBtn" href="">See More</a>
+            </center>
 
-        <!-- Global Offices -->
-        <h3 class="heading" style="font-size: 4rem;">Global Offices</h3>
-        <br><br>
-        <div class="container-fluid">
-            <div class="row justify-content-center" style="background-color: #e6fbff;">
-                <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                    <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
+            <!-- Global Offices -->
+            <h3 class="heading" style="font-size: 4rem;">Global Offices</h3>
+            <br><br>
+            <div class="container-fluid">
+                <div class="row justify-content-center" style="background-color: #e6fbff;">
+                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
+                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
+                    </div>
+                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
+                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
+                    </div>
+                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
+                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
+                    </div>
+                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
+                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="" >
+                    </div>
+                    <a class="btn countrybtn">
+                        <h1><b>OTHER COUNTRIES</b></h1>
+                        <h5><b>CONTACT US</b></h5>
+                    </a>
                 </div>
-                <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                    <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
-                </div>
-                <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                    <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
-                </div>
-                <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                    <img class="globalimage" src="images/case%20studies%203.jpg" alt="" >
-                </div>
-                <a class="btn countrybtn">
-                    <h1><b>OTHER COUNTRIES</b></h1>
-                    <h5><b>CONTACT US</b></h5>
-                </a>
             </div>
-        </div>
         </div>
     </main>
 
