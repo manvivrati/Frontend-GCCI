@@ -56,6 +56,14 @@
     text-transform: uppercase;
 }
 
+.blue_heading {
+    font-size: 4rem;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /* Buttons */
 .fillBtn {
     font-size: 1.3rem;
@@ -272,7 +280,7 @@
 }
 
 .train_Btn {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     display: flex;
     max-width: 500px;
     height: 100px;
