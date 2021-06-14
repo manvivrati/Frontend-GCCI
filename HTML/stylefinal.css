@@ -112,6 +112,7 @@
 .newscard {
     background-color: #e6fbff;
     padding: 7% 5%;
+    height: 220px;
     /*size: 10px 10px;*/
 }
 .newscard:hover {
