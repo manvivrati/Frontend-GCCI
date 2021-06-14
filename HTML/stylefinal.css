@@ -58,7 +58,11 @@
 
 .blue_heading {
     font-size: 4rem;
+<<<<<<< HEAD
     margin-bottom: 4%;
+=======
+    margin-bottom: 5%;
+>>>>>>> d6bbf94adb072cb59efaa23899525db1abaa4128
     margin-top: 3%;
     text-align: center;
     text-transform: uppercase;
@@ -114,6 +118,25 @@
 .emptyBtn:hover {
     color: #fff;
     background-color: #15aad5;!important;
+}
+
+.train_Btn {
+    font-size: 1.5rem;
+    display: flex;
+    max-width: 500px;
+    height: 100px;
+    margin: 3% auto 0;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #1597c2;
+    margin-bottom: 2%;
+
+}
+
+.train_Btn:hover {
+    background-color: #15aad5;!important;
+    color: #fff;
 }
 
 /* News */
@@ -278,24 +301,3 @@
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
-.train_Btn {
-    font-size: 2rem;
-    display: flex;
-    max-width: 500px;
-    height: 100px;
-    margin: 3% auto 0;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color: #1597c2;
-    margin-bottom: 2%;
-
-}
-
-.train_Btn:hover {
-    background-color: #15aad5;!important;
-    color: #fff;
-}
-
-
