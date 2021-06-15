@@ -64,6 +64,14 @@
     text-transform: uppercase;
 }
 
+.headingbg {
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
 /* Buttons */
 .fillBtn {
     font-size: 1.3rem;
