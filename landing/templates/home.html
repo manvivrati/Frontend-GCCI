@@ -5,9 +5,6 @@
     <meta charset="UTF-8" />
     <title>HomePage</title>
 
-    <!-- JS linked -->
-    <script src="javascript.js"></script>
-
     <!-- Bootstrap 4.5 by links -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -17,6 +14,10 @@
 
     <!-- CSS linked -->
     <link rel="stylesheet" href="{% static 'css/stylefinal.css' %}" />
+
+    <!-- JS linked -->
+    <script src="{% static 'js/mainjs.js' %}"></script>
+
   </head>
 
   <body>
@@ -24,9 +25,10 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="home.html">
-          <img style="width: auto; height: 50px" src="{% static 'assets/images/GCCI%20Logo.png' %}" alt="GCCI Web Site" />
+          <img style="width: auto; height: 50px" src="{% static 'assets/images/GCCI Logo.png' %}" alt="GCCI Web Site" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
@@ -51,18 +53,18 @@
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <picture>
-                <source media="(min-width: 768px)" srcset="/images/Banner 1.jpg 1x, /images/Banner 2.jpg 2x" />
-                <img src="{% static 'assets/images/Banner%202.jpg' %}" alt="" class="responsive" />
+                <img src="{% static 'assets/images/Banner 1.jpg' %}" alt="Banner Image 1" class="responsive" />
               </picture>
             </div>
             <div class="carousel-item">
               <picture>
-                <source media="(min-width: 768px)" srcset="/images/Banner 1.jpg 1x, /images/Banner 2.jpg 2x" />
-                <img src="{% static 'assets/images/Banner%201.jpg' %}" alt="" class="responsive" />
+                <img src="{% static 'assets/images/Banner 2.jpg' %}" alt="Banner Image 2" class="responsive" />
               </picture>
             </div>
             <div class="mainVisual_text">
-              <p>Leading global business and <br />manufacturing innovation through <br />Japanese management principles</p>
+              <p>Leading global business and <br />
+                  manufacturing innovation through <br />
+                  Japanese management principles</p>
             </div>
           </div>
           <!-- Next and Previous buttons
@@ -89,8 +91,9 @@
             <div class="col-md-3 pr-md-1">
               <div class="card newscard">
                 <h4 class="card-title">20 Aug 2020</h4>
-                <p class="card-subtitle">News &amp; Topics</p>
-                <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you can see it soon.</p>
+                <p class="card-subtitle">News & Topics</p>
+                <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you can
+                    see it soon.</p>
                 <a href="" class="stretched-link"></a>
               </div>
             </div>
@@ -98,7 +101,8 @@
               <div class="card newscard">
                 <h4 class="card-title">17 Sep 2019</h4>
                 <p class="card-subtitle">Seminar / Events</p>
-                <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok Thailand.</p>
+                <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
+                    Thailand.</p>
                 <a href="" class="stretched-link"></a>
               </div>
             </div>
@@ -106,7 +110,8 @@
               <div class="card newscard">
                 <h4 class="card-title">21 Aug 2019</h4>
                 <p class="card-subtitle">Seminar / Events</p>
-                <p class="card-text">Exhibition at the International Industrial Fair 2019 Kobe in Japan on 5th and 6th September</p>
+                <p class="card-text">Exhibition at the International Industrial Fair 2019 Kobe in Japan on 5th and
+                    6th September</p>
                 <a href="" class="stretched-link"></a>
               </div>
             </div>
@@ -140,8 +145,8 @@
           <div class="row justify-content-center">
             <div class="col-md-6">
               <p>
-                <i>JMAC is Japan’s oldest, and remains one of its largest management consulting firms, with just over 300 <span class="br hiddenSp"></span>management consulting professionals in Japan
-                  alone.</i>
+                <i>JMAC is Japan’s oldest, and remains one of its largest management consulting firms, with just over
+                    300 <span class="br hiddenSp"></span>management consulting professionals in Japan alone.</i>
               </p>
               <a class="btn fillBtn" href="">See More</a>
             </div>
@@ -153,25 +158,25 @@
           <div class="carousel slide pointer-event" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img src="images/Banner%202.jpg" alt="" class="achievement" />
+                <img src="{% static 'assets/images/Banner 2.jpg' %}" alt="Achievements Image" class="achievement" />
               </div>
               <div class="achievement_text">
                 <div class="row achievement justify-content-md-center">
                   <div class="col-md-3 text-center">
-                      <h1>75</h1>
-                      <p>Years Since Foundation</p>
+                    <h1>75</h1>
+                    <p>Years Since Foundation</p>
                   </div>
                   <div class="col-md-3 text-center">
-                      <h1>2750</h1>
-                      <p>Projects Each Year</p>
+                    <h1>2750</h1>
+                    <p>Projects Each Year</p>
                   </div>
                   <div class="col-md-3 text-center">
-                      <h1>71</h1>
-                      <p>of Japan's Top 100 Companies Supported</p>
+                    <h1>71</h1>
+                    <p>of Japan's Top 100 Companies Supported</p>
                   </div>
                   <div class="col-md-3 text-center">
-                      <h1>58</h1>
-                      <p>Countries Conducted Projects</p>
+                    <h1>58</h1>
+                    <p>Countries Conducted Projects</p>
                   </div>
                 </div>
               </div>
@@ -193,14 +198,15 @@
           <div class="carousel slide pointer-event" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img src="images/about_jmac.jpg" alt="" class="services" />
+                <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="Services Image" class="services" />
               </div>
               <div class="services_text">
                 <div class="row services">
                   <center>
                     <h3 class="heading" style="font-size: 3rem; color: white">Consulting</h3>
                     <p>
-                      As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>, <span class="br hiddenSp"></span>we adopt the principles of Lean thinking in our
+                      As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
+                      <span class="br hiddenSp"></span>we adopt the principles of Lean thinking in our
                       consulting projects across all industries and processes.
                     </p>
                   </center>
@@ -244,12 +250,9 @@
         <center>
           <div class="row justify-content-center">
             <div class="col-md-6">
-              <p>
-                <i
-                  >Our well-versed consultants offer training programs filled with know-how on problem solving for business challenges, <span class="br hiddenSp"></span>leveraging their consultation
-                  experience.</i
-                >
-              </p>
+              <p><i>Our well-versed consultants offer training programs filled with know-how on problem solving for
+                  business challenges, <span class="br hiddenSp"></span>leveraging their consultation
+                  experience.</i></p>
               <a class="btn fillBtn" href="">See More</a>
             </div>
           </div>
@@ -262,13 +265,13 @@
             <div class="col-md-3">
               <div class="card casecard">
                 <center>
-                  <img class="card-img-top" src="images/case%20studies%201.jpg" alt="" />
+                  <img class="card-img-top" src="{% static 'assets/images/case studies 1.jpg' %}"
+                       alt="Case Study 1 Image" />
                   <div class="card-title text-info"><b>BETAGRO</b></div>
                   <div class="card-text">
-                    <p>
-                      The KAIZEN mindset in the BETAGRO culture Originally, the company had started its own KAIZEN activities, but the Strategy Deployment Project made the results visible, so the
-                      company created a reportin...
-                    </p>
+                    The KAIZEN mindset in the BETAGRO culture Originally, the company had started its own KAIZEN
+                    activities, but the Strategy Deployment Project made the results visible, so the
+                    company created a reportin...
                   </div>
                 </center>
                 <a href="" class="stretched-link"></a>
@@ -277,10 +280,12 @@
             <div class="col-md-3">
               <div class="card casecard">
                 <center>
-                  <img class="card-img-top" src="images/case%20studies%202.jpg" alt="" />
+                  <img class="card-img-top" src="{% static 'assets/images/case studies 2.jpg' %}"
+                       alt="Case Study 2 Image" />
                   <div class="card-title text-info"><b>Indian Ocean Tuna （IOT）[1/2]</b></div>
                   <div class="card-text">
-                    Corporate Reform through Company-wide Strategy Deployment Project to Strengthen the Corporate Structure - Promoting Activities Through Ownership and Taking on Challenges to Achieve
+                    Corporate Reform through Company-wide Strategy Deployment Project to Strengthen the Corporate
+                    Structure - Promoting Activities Through Ownership and Taking on Challenges to Achieve
                     Higher Goals In Ju...
                   </div>
                 </center>
@@ -290,10 +295,12 @@
             <div class="col-md-3">
               <div class="card casecard">
                 <center>
-                  <img class="card-img-top" src="images/case%20studies%203.jpg" alt="" />
+                  <img class="card-img-top" src="{% static 'assets/images/case studies 3.jpg' %}"
+                       alt="Case Study 3 Image" />
                   <div class="card-title text-info"><b>Indian Ocean Tuna （IOT）[2/2]</b></div>
                   <div class="card-text">
-                    How ownership was created More than a year has passed since the start of the project, and Madnack notes that he has begun to foresee the achievement of goals that had been
+                    How ownership was created More than a year has passed since the start of the project, and Madnack
+                    notes that he has begun to foresee the achievement of goals that had been
                     considered difficult. "The C...
                   </div>
                 </center>
@@ -308,13 +315,14 @@
         <div class="container-fluid">
           <div class="text-center">
             <p>
-              JMAC currently has five subsidiaries; two in China, and one in Thailand, South Korea, and Italy respectively. <br />We provide services in every country by dispatching consultants from
+              JMAC currently has five subsidiaries; two in China, and one in Thailand, South Korea, and Italy
+              respectively. <br />We provide services in every country by dispatching consultants from
               any one of our global offices.
             </p>
           </div>
           <div class="d-flex justify-content-center">
 
-            <img src="images/img_locations.jpeg" alt="" class="map" />
+            <img src="{% static 'assets/images/img_locations.jpeg' %}" alt="Locations Image" class="map" />
           </div>
           <a class="btn fillBtn" href="">See More</a>
         </div>
@@ -325,16 +333,16 @@
         <div class="container-fluid">
           <div class="row justify-content-center" style="background-color: #e6fbff">
             <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px">
-              <img class="globalimage" src="images/case%20studies%203.jpg" alt="" />
+              <img class="globalimage" src="{% static 'assets/images/case studies 3.jpg' %}" alt="Thailand" />
             </div>
             <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px">
-              <img class="globalimage" src="images/case%20studies%203.jpg" alt="" />
+              <img class="globalimage" src="{% static 'assets/images/case studies 3.jpg' %}" alt="China" />
             </div>
             <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px">
-              <img class="globalimage" src="images/case%20studies%203.jpg" alt="" />
+              <img class="globalimage" src="{% static 'assets/images/case studies 3.jpg' %}" alt="Korea" />
             </div>
             <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px">
-              <img class="globalimage" src="images/case%20studies%203.jpg" alt="" />
+              <img class="globalimage" src="{% static 'assets/images/case studies 3.jpg' %}" alt="Europe" />
             </div>
             <a class="btn countrybtn">
               <h1><b>OTHER COUNTRIES</b></h1>
@@ -347,7 +355,7 @@
 
     <footer style="background-color: #21489e">
       <center>
-        <img src="images/footer.jpeg" alt="" class="footer" />
+        <img src="{% static 'assets/images/footer.jpeg' %}" alt="Footer Image" class="footer" />
         <div class="container-fluid text-light">
           <div class="row justify-content-md-center" style="padding-bottom: 1%">
             <div class="col-md-1">
@@ -375,10 +383,11 @@
       </center>
     </footer>
 
-    <!--    write site name <a class="scrollToTop smoothScroll" id="scrollToTop" href="/#top">Scroll to top</a>-->
-    <!--<div class="gdprPopup"><div class="gdprPopup_inner"><p class="gdprPopup_policy">This website stores cookies on your
-computer. These cookies are used to improve our website and provide more personalized services to you. To find out more
-about the cookies we use, See our <a href="https://global.jmac.co.jp/privacypolicy/" target="_blank">PRIVACY POLICY</a>
-</p><button class="gdprPopup_button">Accept</button></div></div>-->
+    <!--write site name <a class="scrollToTop smoothScroll" id="scrollToTop" href="/#top">Scroll to top</a>-->
+    <!--<div class="gdprPopup"><div class="gdprPopup_inner"><p class="gdprPopup_policy">This website stores cookies on
+    your computer. These cookies are used to improve our website and provide more personalized services to you. To find
+    out more about the cookies we use, See our <a href="https://global.jmac.co.jp/privacypolicy/" target="_blank">
+    PRIVACY POLICY</a>
+    </p><button class="gdprPopup_button">Accept</button></div></div>-->
   </body>
 </html>
