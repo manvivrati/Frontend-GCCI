@@ -1,0 +1,61 @@
+{% extends 'Navbar.html' %}{% load static %}{% block landing %}
+
+<main>
+    <!-- Top Carousel -->
+    <div class="mt-4 pt-5">
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{% static 'assets/images/Banner 1.jpg' %}"
+                         alt="Banner Image 1" class="responsive" />
+                </div>
+                <div class="mainVisual_text">
+                    <h2>NEWS</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 overflow-hidden">
+    <!-- News -->
+        <div class="row-lg-2">
+            <div class="col">
+                <h2 class="heading">News</h2>
+            </div>
+        </div>
+        <div class="row-lg-10 justify-content-center">
+            <div class="card-group justify-content-md-center">
+                <div class="col-md-3 pr-md-1">
+                    <div class="card newscard">
+                        <h4 class="card-title">20 Aug 2020</h4>
+                        <p class="card-subtitle">News & Topics</p>
+                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
+                            can see it soon.</p>
+                        <a href="" class="stretched-link"></a>
+                    </div>
+                </div>
+            <div class="col-md-3 pl-md-1 pr-md-1">
+                <div class="card newscard">
+                    <h4 class="card-title">17 Sep 2019</h4>
+                    <p class="card-subtitle">Seminar / Events</p>
+                    <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
+                        Thailand.</p>
+                    <a href="" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-md-3 pl-md-1">
+                <div class="card newscard">
+                    <h4 class="card-title">21 Aug 2019</h4>
+                    <p class="card-subtitle">Seminar / Events</p>
+                    <p class="card-text">Exhibition at the International Industrial Fair 2019 Kobe in Japan on 5th and
+                        6th September</p>
+                    <a href="" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <a class="btn fillBtn" href="">See More</a>
+    </div>
+</main>
+
+{% endblock landing %}
