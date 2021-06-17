@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>HomePage</title>
+
+    <!-- Bootstrap 4.5 by links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS linked -->
+    <link rel="stylesheet" href="{% static 'css/stylefinal.css' %}" />
+
+    <!-- JS linked -->
+    <script src="{% static 'js/mainjs.js' %}"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="home.html">
+                <img style="width: auto; height: 50px"
+                     src="{% static 'assets/images/GCCI Logo.png' %}"
+                     alt="GCCI Web Site" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">About GCCI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Our Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicesfinal.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Case Study</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="">{% block landing %}{% endblock landing %}</div>
+    <footer style="background-color: #21489e">
+        <center>
+        <img src="{% static 'assets/images/footer.jpeg' %}" alt="Footer Image" class="footer" />
+        <div class="container-fluid text-light">
+            <div class="row justify-content-md-center" style="padding-bottom: 1%">
+                <div class="col-md-1">
+                    <a class="text-light" href="">About GCCI</a>
+                </div>
+                <div class="col-md-1">
+                    <a class="text-light" href="">CSR</a>
+                </div>
+                <div class="col-md-1">
+                    <a class="text-light" href="">Services</a>
+                </div>
+                <div class="col-md-1">
+                  <a class="text-light" href="">Policy</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>TPM is trademark or registered trademark of Japan Institute of Plant Maintenance (JIPM).<br />
+                        <small>Copyright (C) JMA Consultants Inc. All Rights Reserved.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </center>
+    </footer>
+</body>
