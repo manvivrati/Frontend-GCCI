@@ -3,40 +3,40 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-	return render(request,'home.html')
+	return render(request, 'home.html')
 
 def services(request):
-	return HttpResponse('Services Page')
+	return render(request, 'servicesfinal.html')
 
 def contact_us(request):
-	return HttpResponse('Contact Us Page')
+	return HttpResponse('Contact Us')
 
 def lean_manufacturing(request):
-	return HttpResponse('Lean Manufacturing Page')
+	return render(request, 'Lean_Manufacture.html')
 
 def smart_factory(request):
-	return HttpResponse('Home Page')
+	return render(request, 'smartfactory.html')
 
 def tpm(request):
 	return HttpResponse('Home Page')
 
 
 def innovation_management(request):
-	return HttpResponse('Home Page')
+	return render(request, 'Innovation_Management.html')
 
 
 def services_and_sales(request):
-	return HttpResponse('Home Page')
+	return render(request, 'SalesAndInnovation.html')
 
 
 def organization_and_hr(request):
-	return HttpResponse('Home Page')
+	return render(request, 'organization_hr.html')
 
 def training_for_manufacture(request):
-	pass
+	return render(request, 'manufacture_page.html')
 
 def p_course(request):
-	pass
+	return render(request, 'pcourse.html')
 
 def kart_factory(request):
-	pass
+	return render(request, 'kartfactory.html')
