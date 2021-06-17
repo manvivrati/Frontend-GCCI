@@ -1,249 +1,149 @@
-<!DOCTYPE html >
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Lean Manufacture</title>
+{% extends 'Navbar.html' %}{% load static %}{% block landing %}
 
-        <!--Bootstrap linked -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="stylefinal.css">
-    </head>
-
-    <body style="font-size: 1.2rem;">
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="home.html">
-                <img style="width: auto; height: 50px" src="images/GCCI%20Logo.png" alt="GCCI Web Site">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="">News</a></li>
-                <li class="nav-item"><a class="nav-link" href="">About GCCI</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Our Journey</a></li>
-                <li class="nav-item active"><a class="nav-link" href="servicesfinal.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Case Study</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Locations</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
-            </ul>
+<main>
+    <!-- Top Carousel -->
+    <div class="mt-4 pt-5">
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{% static 'assets/images/Banner 1.jpg' %}" alt="Consulting" class="responsive" style="max-height: 300px;">
+                </div>
             </div>
-        </nav>
-    </header>
+                <div class="services_text" style="padding: 8% 8%;">
+                    <h1 class="text-light text-center" style="font-size: 5rem;"><b>CONSULTING</b></h1>
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0 overflow-hidden">
 
-    <main>
-        <!-- Top Carousel -->
+        <!-- Lean Manufacture -->
+        <div>
+            <div class="container">
+                <br/>
+                <h2 class="blue_heading" style="color: #093a8c;">Lean Manufacturing</h2>
+                <h2><b>Training by Level</b></h2>
+                <hr/>
+                <p>Since our foundation in 1942, JMAC has been fortunate to have had the opportunity to assist
+                    many clients. In particular, much of our work has been done in support of key players within
+                    manufacturing industries. Over the years since foundation, JMAC has played an important role
+                    in the development of Lean. Based upon this long history of involvement with manufacturing
+                    industries, JMAC has developed its valuable knowledge into a Lean Manufacturing Consulting
+                    program.</p>
+                <p>At JMAC we position “production” in a critical section driving the overall system, centered
+                    around the processes from planning and R&amp;D through to logistics and sales. That is to
+                    say, innovating production strategy, control systems and production systems, vitalizing
+                    corporate activities, improving manufacturing strength and improving business results. In
+                    implementing these company changes, JMAC does not just imitate simple successful examples.
+                    Each situation is different, and JMAC believes implementation must be carried out together
+                    with company personnel in order to achieve the desired results.</p>
+                <p>JMAC does much more than just survey, analyze and make a report. We create personal
+                    relationships of trust with members of the client side task force. This enables JMAC to
+                    discover the hidden intrinsic strengths of the company, understand these strengths and
+                    further extract latent abilities. In order to accomplish this, our first approach is to the
+                    people and organization, which are the backbone of a company. From there, JMAC measures,
+                    analyzes, proposes concrete changes to the production strategy, production system and control
+                    system and finally (and most importantly) implements them with the members of your
+                    organization.<br>This method may outwardly appear very simple, but in our more than 70 years
+                    of working with client partners, we understand from experience that this is absolutely the
+                    most effective method.</p><br/>
+            </div>
+        </div>
+        <div class="row" style="background-color: #e6fbff; height: 35%;">
+            <div class="container">
+                <h1 class="image"><b>Lean Manufacturing Services</b></h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="btn train_Btn" href="">Production Strategy & Production System Design</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn train_Btn" href="">Productivity Improvement & Cost Reduction</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn train_Btn" href="">Quality Management</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="btn train_Btn" href="" style="margin-bottom: 15%">Supply Chain Management</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+         <!-- Services -->
+        <h2 class="heading">Services</h2>
         <div class="mt-4 pt-5">
-            <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+            <div class="carousel slide pointer-event" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="images/Banner%201.jpg" alt="" class="responsive" style="max-height: 300px;">
+                        <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="About" class="services" />
+                    </div>
+                    <div class="services_text">
+                        <div class="row services">
+                            <center>
+                                <h3 class="heading" style="font-size: 3rem; color: white">Consulting</h3>
+                                <p>
+                                  As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>, <span class="br hiddenSp"></span>we adopt the principles of Lean thinking in our
+                                  consulting projects across all industries and processes.
+                                </p>
+                            </center>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'lean_manufacturing' %}">
+                                    Lean Manufacturing</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="{% url 'smart_factory' %}">
+                                    Smart Factory / IoT</a>
+                            </div>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-12">
+                                <a class="btn emptyBtn" href="">TPM</a>
+                            </div>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'innovation_management' %}">
+                                    Innovation Management</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="{% url 'services_and_sales' %}">
+                                    Service &amp; Sales Innovation</a>
+                            </div>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'organization_and_hr' %}">
+                                    Organization &amp; HR</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="">
+                                    Japan Market Entry</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                    <div class="services_text" style="padding: 8% 8%;">
-                        <h1 class="text-light text-center" style="font-size: 5rem;"><b>CONSULTING</b></h1>
-                    </div>
             </div>
         </div>
-        <div class="container-fluid px-0 overflow-hidden">
 
-            <!-- Lean Manufacture -->
-            <div>
-                <div class="container">
-                    <br/>
-                    <h2 class="blue_heading" style="color: #093a8c;">Lean Manufacturing</h2>
-                    <h2><b>Training by Level</b></h2>
-                    <hr/>
-                    <p>Since our foundation in 1942, JMAC has been fortunate to have had the opportunity to assist
-                        many clients. In particular, much of our work has been done in support of key players within
-                        manufacturing industries. Over the years since foundation, JMAC has played an important role
-                        in the development of Lean. Based upon this long history of involvement with manufacturing
-                        industries, JMAC has developed its valuable knowledge into a Lean Manufacturing Consulting
-                        program.</p>
-                    <p>At JMAC we position “production” in a critical section driving the overall system, centered
-                        around the processes from planning and R&amp;D through to logistics and sales. That is to
-                        say, innovating production strategy, control systems and production systems, vitalizing
-                        corporate activities, improving manufacturing strength and improving business results. In
-                        implementing these company changes, JMAC does not just imitate simple successful examples.
-                        Each situation is different, and JMAC believes implementation must be carried out together
-                        with company personnel in order to achieve the desired results.</p>
-                    <p>JMAC does much more than just survey, analyze and make a report. We create personal
-                        relationships of trust with members of the client side task force. This enables JMAC to
-                        discover the hidden intrinsic strengths of the company, understand these strengths and
-                        further extract latent abilities. In order to accomplish this, our first approach is to the
-                        people and organization, which are the backbone of a company. From there, JMAC measures,
-                        analyzes, proposes concrete changes to the production strategy, production system and control
-                        system and finally (and most importantly) implements them with the members of your
-                        organization.<br>This method may outwardly appear very simple, but in our more than 70 years
-                        of working with client partners, we understand from experience that this is absolutely the
-                        most effective method.</p><br/>
-                </div>
-            </div>
-            <div class="row" style="background-color: #e6fbff; height: 35%;">
-                <div class="container">
-                    <h1 class="image"><b>Lean Manufacturing Services</b></h1>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a class="btn train_Btn" href="">Production Strategy & Production System Design</a>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn train_Btn" href="">Productivity Improvement & Cost Reduction</a>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn train_Btn" href="">Quality Management</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a class="btn train_Btn" href="" style="margin-bottom: 15%">Supply Chain Management</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-             <!-- Services -->
-            <h2 class="heading">Services</h2>
-            <div class="mt-4 pt-5">
-              <div class="carousel slide pointer-event" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                    <img src="images/about_jmac.jpg" alt="" class="services" />
-                  </div>
-                  <div class="services_text">
-                    <div class="row services">
-                      <center>
-                        <h3 class="heading" style="font-size: 3rem; color: white">Consulting</h3>
-                        <p>
-                          As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>, <span class="br hiddenSp"></span>we adopt the principles of Lean thinking in our
-                          consulting projects across all industries and processes.
-                        </p>
-                      </center>
-                    </div>
-                    <div class="row services">
-                      <div class="col-md-6">
-                        <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%" href="Lean_Manufacture.html"> Lean Manufacturing</a>
-                      </div>
-                      <div class="col-md-6">
-                        <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%" href="smartfactory.html"> Smart Factory / IoT</a>
-                      </div>
-                    </div>
-                    <div class="row services">
-                      <div class="col-md-12">
-                        <a class="btn emptyBtn" href="">TPM</a>
-                      </div>
-                    </div>
-                    <div class="row services">
-                      <div class="col-md-6">
-                        <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%" href="Innovation_Management.html"> Innovation Management</a>
-                      </div>
-                      <div class="col-md-6">
-                        <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%" href="SalesAndInnovation.html"> Service &amp; Sales Innovation</a>
-                      </div>
-                    </div>
-                    <div class="row services">
-                      <div class="col-md-6">
-                        <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%" href="organization_hr.html"> Organization &amp; HR</a>
-                      </div>
-                      <div class="col-md-6">
-                        <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%" href="Japan_Market.html"> Japan Market Entry</a>
-                      </div>
-                    </div>
-                  </div>
+        <!-- Training -->
+        <div style="background-color: #e6fbff;">
+            <br>
+            <h1 class="text-center" style="padding-top: 30px">Training</h1>
+            <center>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <p>Our well-versed consultants offer training programs filled with know-how on problem
+                      solving for business challenges, leveraging their consultation experience.</p>
+                  <a class="btn fillBtn" href="" style="margin-bottom: 80px">See More</a>
                 </div>
               </div>
-            </div>
-
-            <!-- Training -->
-            <div style="background-color: #e6fbff;">
-                <br>
-                <h1 class="text-center" style="padding-top: 30px">Training</h1>
-                <center>
-                  <div class="row justify-content-center">
-                    <div class="col-md-6">
-                      <p>Our well-versed consultants offer training programs filled with know-how on problem
-                          solving for business challenges, leveraging their consultation experience.</p>
-                      <a class="btn fillBtn" href="" style="margin-bottom: 80px">See More</a>
-                    </div>
-                  </div>
-                </center>
-            </div>
-
-            <!-- Locations -->
-            <h2 class="heading">Locations</h2>
-            <center>
-                <div class="row justify-content-center">
-                    <p>JMAC currently has five subsidiaries; two in China, and one in Thailand, South Korea, and Italy respectively.
-                       <br>We provide services in every country by dispatching consultants from any one of our global offices.</p>
-                </div>
-                <div>
-                    <picture>
-                      <source media="(min-width: 768px)" srcset="/images/Banner 1.jpg 1x, /images/Banner 2.jpg 2x">
-                      <img src="images/img_locations.jpeg" alt="" class="map">
-                  </picture>
-                </div>
-                <a class="btn fillBtn" href="">See More</a>
             </center>
-
-            <!-- Global Offices -->
-            <h3 class="heading" style="font-size: 4rem;">Global Offices</h3>
-            <br><br>
-            <div class="container-fluid">
-                <div class="row justify-content-center" style="background-color: #e6fbff;">
-                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
-                    </div>
-                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
-                    </div>
-                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
-                    </div>
-                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="" >
-                    </div>
-                    <a class="btn countrybtn">
-                        <h1><b>OTHER COUNTRIES</b></h1>
-                        <h5><b>CONTACT US</b></h5>
-                    </a>
-                </div>
-            </div>
         </div>
-    </main>
+    </div>
+</main>
 
-    <footer style="background-color: #21489e;">
-        <center>
-            <img src="images/footer.jpeg" alt="" class="footer">
-            <div class="container-fluid text-light">
-            <div class="row justify-content-md-center" style="padding-bottom: 1%;">
-                <div class="col-md-1">
-                    <a class="text-light" href="">About GCCI</a>
-                </div>
-                <div class="col-md-1">
-                    <a class="text-light" href="">CSR</a>
-                </div>
-                <div class="col-md-1">
-                    <a class="text-light"  href="">Services</a>
-                </div>
-                <div class="col-md-1">
-                    <a class="text-light"  href="">Policy</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>TPM is trademark or registered trademark of Japan Institute of Plant Maintenance (JIPM).<br/>
-                    <small>Copyright (C) JMA Consultants Inc. All Rights Reserved.</small></p>
-                </div>
-            </div>
-            </div>
-        </center>
-    </footer>
-  </body>
-</html>
+{% endblock landing %}
+
