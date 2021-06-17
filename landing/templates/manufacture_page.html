@@ -1,252 +1,142 @@
-<!DOCTYPE html >
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Manufacture</title>
+{% extends 'Navbar.html' %}{% load static %}{% block landing %}
 
-        <!--Bootstrap linked -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="stylefinal.css">
-    </head>
-
-    <body style="font-size: 1.2rem;">
-        <!-- Navbar -->
-        <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="home.html">
-                <img style="width: auto; height: 50px" src="images/GCCI%20Logo.png" alt="GCCI Web Site">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="">News</a></li>
-                <li class="nav-item"><a class="nav-link" href="">About GCCI</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Our Journey</a></li>
-                <li class="nav-item active"><a class="nav-link" href="servicesfinal.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Case Study</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Locations</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
-            </ul>
+<main>
+    <!-- Top Carousel -->
+    <div class="mt-4 pt-5">
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{% static 'assets/images/Banner 1.jpg' %}" alt="" class="responsive" style="height: 280px;">
+                </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Top Carousel -->
-        <!-- Top Carousel -->
+                <div class="services_text" style="padding: 8% 8%;">
+                    <center>
+                    <h1 class="text-light" style="font-size: 5rem;"><b>TRAINING</b></h1>
+                    </center>
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0 overflow-hidden">
+        <!-- Content -->
+        <div class="container">
+            <br/>
+            <h2 class="blue_heading" style="color: #093a8c;">Training for Manufacturers</h2>
+            <p>JMAC offers a wide-range of training programs for manufacturers. These range from overall
+            management techniques to shop floor techniques and are catered for with an executive level,
+                middle management level, supervisor level, and operator level focus. Taking into
+                account the challenges faced by each individual client, we design a customized training
+                program based on actual needs.<br>Our well-versed consultants offer training programs
+                filled with know-how on problem solving for business challenges, leveraging their
+                consulting experience. Please contact us for further information.</p>
+            <center>
+                <img src="{% static 'assets/images/Manufacture.jpg' %}" alt="Manufacture Image"
+                     class="image">
+            </center>
+            <h2><b>Training By Level</b></h2>
+            <hr/>
+                 <ul>
+                    <li>Executive Course</li>
+                    <li>General Manager Course</li>
+                    <li>Manager Course</li>
+                    <li>Supervisor Course</li>
+                  </ul>
+            <br/>
+            <h2><b>Training by Function</b></h2>
+            <hr/>
+            <ul>
+                <li>DRBFM (Design Review Based on Failure Mode)</li>
+                <li>SCM</li>
+                <li>Procurement (Advanced and Basic)</li>
+                <li>Quality Control</li>
+                <li>IE</li>
+                <li>Production Control</li>
+                <li>5S</li>
+                <li>Safety</li>
+             </ul>
+            <br/>
+            <h2><b>Human Skill</b></h2>
+            <hr/>
+            <ul>
+                <li>Leadership</li>
+                <li>Communication</li>
+            </ul>
+            <br/>
+            <h2><b>Problem Solving</b></h2>
+            <hr/>
+            <ul>
+                <li>Logical Thinking</li>
+                <li>Problem Solving</li>
+            </ul>
+            <br/>
+            <h2><b>Managerial Skill</b></h2>
+            <hr/>
+            <ul>
+                <li>Process Control</li>
+                <li>Business Planning</li>
+                <li>KPI Management</li>
+                <li>HR Management</li>
+                <li>Accounting & Finance</li>
+                <li>Individual Promotion Evaluation</li>
+            </ul>
+        </div>
+        <h2 class="heading">Services</h2>
         <div class="mt-4 pt-5">
-            <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+            <div class="carousel slide pointer-event" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="/images/Banner 1.jpg 1x, /images/Banner 2.jpg 2x">
-                        <img src="images/Banner%201.jpg" alt="" class="responsive" style="height: 280px;">
-                    </picture>
+                        <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="About GCCI Image"
+                             class="services" style="max-height: 300px;">
                     </div>
-                </div>
-                    <div class="services_text" style="padding: 8% 8%;">
+                    <div class="services_text">
+                        <div class="row services justify-content-md-center">
                         <center>
-                        <h1 class="text-light" style="font-size: 5rem;"><b>TRAINING</b></h1>
+                            <h3 class="heading" style="font-size: 3rem; color: white;">Consulting</h3>
+                            <div class="col-md-6">
+                            <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
+                                we adopt the principles of Lean thinking in our consulting
+                                projects across all industries and processes.</p>
+                            </div>
                         </center>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-12">
+                                <a class="btn emptyBtn" style="max-width: 200px; height: 40px; font-size: 1.3rem;"
+                                   href="">See More</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <!-- Content -->
+
+        <!-- Training-->
+        <div class="row" style="background-color: #e6fbff; height: 35%;">
             <div class="container">
-                <br/>
-                <h2 class="blue_heading" style="color: #093a8c;">Training for Manufacturers</h2>
-                <p>JMAC offers a wide-range of training programs for manufacturers. These range from overall
-                management techniques to shop floor techniques and are catered for with an executive level,
-                    middle management level, supervisor level, and operator level focus. Taking into
-                    account the challenges faced by each individual client, we design a customized training
-                    program based on actual needs.<br>Our well-versed consultants offer training programs
-                    filled with know-how on problem solving for business challenges, leveraging their
-                    consulting experience. Please contact us for further information.</p>
-                 <center><picture>
-                        <img src="./images/Manufacture.jpg" alt="" class="image">
-                </picture></center>
-                <h2><b>Training By Level</b></h2>
-                <hr/>
-                     <ul>
-                        <li>Executive Course</li>
-                        <li>General Manager Course</li>
-                        <li>Manager Course</li>
-                        <li>Supervisor Course</li>
-                      </ul>
-                <br/>
-                <h2><b>Training by Function</b></h2>
-                <hr/>
-                <ul>
-                    <li>DRBFM (Design Review Based on Failure Mode)</li>
-                    <li>SCM</li>
-                    <li>Procurement (Advanced and Basic)</li>
-                    <li>Quality Control</li>
-                    <li>IE</li>
-                    <li>Production Control</li>
-                    <li>5S</li>
-                    <li>Safety</li>
-                 </ul>
-                <br/>
-                <h2><b>Human Skill</b></h2>
-                <hr/>
-                <ul>
-                    <li>Leadership</li>
-                    <li>Communication</li>
-                </ul>
-                <br/>
-                <h2><b>Problem Solving</b></h2>
-                <hr/>
-                <ul>
-                    <li>Logical Thinking</li>
-                    <li>Problem Solving</li>
-                </ul>
-                <br/>
-                <h2><b>Managerial Skill</b></h2>
-                <hr/>
-                <ul>
-                    <li>Process Control</li>
-                    <li>Business Planning</li>
-                    <li>KPI Management</li>
-                    <li>HR Management</li>
-                    <li>Accounting &amp; Finance</li>
-                    <li>Individual Promotion Evaluation</li>
-                </ul>
-            </div>
-            <h2 class="heading">Services</h2>
-            <div class="mt-4 pt-5">
-                <div class="carousel slide pointer-event" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img src="images/about_jmac.jpg" alt="" class="services" style="max-height: 400px;">
-                        </div>
-                        <div class="services_text">
-                            <div class="row services justify-content-md-center">
-                            <center>
-                                <h3 class="heading" style="font-size: 3rem; color: white;">Consulting</h3>
-                                <div class="col-md-6">
-                                <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
-                                    we adopt the principles of Lean thinking in our consulting
-                                    projects across all industries and processes.</p>
-                                </div>
-                            </center>
-                            </div>
-                            <div class="row services">
-                                <div class="col-md-12">
-                                    <a class="btn emptyBtn" style="max-width: 200px; height: 40px; font-size: 1.3rem;"
-                                       href="">See More</a>
-                                </div>
-                            </div>
-                        </div>
+                <h1 class="image text-center"><b>TRAINING</b></h1>
+                <p class="text-center">Our well-versed consultants offer training programs filled with know-how on problem solving for business challenges,
+                    leveraging  their consultation experience.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="btn train_Btn" href="{% url 'training_for_manufacture' %}">
+                            <b>Training for Manufactures</b></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn train_Btn" href="{% url 'p_course' %}">
+                            <b>P-Course</b></a>
                     </div>
                 </div>
-            </div>
-
-            <!-- Training-->
-            <div class="row" style="background-color: #e6fbff; height: 35%;">
-                <div class="container">
-                    <h1 class="image text-center"><b>TRAINING</b></h1>
-                    <p class="text-center">Our well-versed consultants offer training programs filled with know-how on problem solving for business challenges,
-                        leveraging  their consultation experience.</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="btn train_Btn" href="">
-                                <b>Training for Manufactures</b></a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="btn train_Btn" href="">
-                                <b>P-Course</b></a>
-                        </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="btn train_Btn" href="{% url 'kart_factory' %}">
+                            <b>Kart Factory</b></a>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="btn train_Btn" href="">
-                                <b>Kart Factory</b></a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="btn train_Btn" href="" style="margin-bottom: 15%">
-                                <b>TPM Training</b></a>
-                        </div>
+                    <div class="col-md-6">
+                        <a class="btn train_Btn" href="" style="margin-bottom: 15%">
+                            <b>TPM Training</b></a>
                     </div>
-                </div>
-            </div>
-
-
-            <!-- Locations -->
-            <h2 class="heading">Locations</h2>
-            <center>
-                <div class="row justify-content-center">
-                    <p>JMAC currently has five subsidiaries; two in China, and one in Thailand, South Korea, and Italy respectively.
-                       <br>We provide services in every country by dispatching consultants from any one of our global offices.</p>
-                </div>
-                <div>
-                    <picture>
-                      <source media="(min-width: 768px)" srcset="/images/Banner 1.jpg 1x, /images/Banner 2.jpg 2x">
-                      <img src="images/img_locations.jpeg" alt="" class="map">
-                  </picture>
-                </div>
-                <a class="btn fillBtn" href="">See More</a>
-             </center>
-
-            <!-- Global Offices -->
-            <h3 class="heading" style="font-size: 4rem;">Global Offices</h3>
-            <br><br>
-            <div class="container-fluid">
-                <div class="row justify-content-center" style="background-color: #e6fbff;">
-                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
-                    </div>
-                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
-                    </div>
-                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="">
-                    </div>
-                    <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
-                        <img class="globalimage" src="images/case%20studies%203.jpg" alt="" >
-                    </div>
-                    <a class="btn countrybtn">
-                        <h1><b>OTHER COUNTRIES</b></h1>
-                        <h5><b>CONTACT US</b></h5>
-                    </a>
                 </div>
             </div>
         </div>
-    </main>
-
-    <footer style="background-color: #21489e;">
-        <center>
-            <img src="images/footer.jpeg" alt="" class="footer">
-            <div class="container-fluid text-light">
-            <div class="row justify-content-md-center" style="padding-bottom: 1%;">
-                <div class="col-md-1">
-                    <a class="text-light" href="">About GCCI</a>
-                </div>
-                <div class="col-md-1">
-                    <a class="text-light" href="">CSR</a>
-                </div>
-                <div class="col-md-1">
-                    <a class="text-light"  href="">Services</a>
-                </div>
-                <div class="col-md-1">
-                    <a class="text-light"  href="">Policy</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>TPM is trademark or registered trademark of Japan Institute of Plant Maintenance (JIPM).<br/>
-                    <small>Copyright (C) JMA Consultants Inc. All Rights Reserved.</small></p>
-                </div>
-            </div>
-            </div>
-        </center>
-    </footer>
-  </body>
-</html>
+    </div>
+</main>
+{% endblock landing %}
