@@ -6,7 +6,7 @@ def home(request):
 	return render(request, 'home.html')
 
 def services(request):
-	return render(request, 'servicesfinal.html')
+	return render(request, 'services.html')
 
 def contact_us(request):
 	return HttpResponse('Contact Us')

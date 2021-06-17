@@ -1,0 +1,228 @@
+{% extends 'Navbar.html' %}{% load static %}{% block landing %}
+
+<main>
+    <!-- Top Carousel -->
+    <div class="mt-4 pt-5">
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{% static 'assets/images/Banner 1.jpg' %}" alt="Services Banner" class="responsive">
+                </div>
+            </div>
+                <div class="services_text">
+                    <h1 class="text-light" style="font-size: xxx-large"><b>SERVICES</b></h1>
+                    <p><i>As the consulting firm that contributed to the foundations of Lean/TPS and TPM, we adopt the
+                   principles of Lean thinking in our consulting projects across all industries and processes.<br>
+                    Our well-versed consultants offer training programs filled with know-how on problem solving
+                    for business challenges, leveraging their consultation experience.</i></p>
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- Buttons -->
+        <center>
+            <div class="btn-group btn-group-lg" role="group">
+                <a type="button" class="btn service_btn" href="#consulting"><h5>Counsulting</h5></a>
+                    <a type="button" class="btn service_btn" href="#training"><h5>Training</h5></a>
+            </div>
+        </center>
+
+        <!-- Consulting -->
+        <div id="consulting">
+            <div class="container">
+                <br/>
+                <h2 class="heading" style="color: #093a8c;">Consulting</h2>
+
+                <h2><b>An integrated consulting firm for all business challenges</b></h2>
+                <hr/>
+                    <p>JMAC has made meaningful contributions to the growth of Japanese industry.
+                        Today, JMAC provides a wide range of consulting services in production, R&amp;D, service/sales,
+                        strategy, organizational development and HR to clients regardless of size,
+                        across industries, and geographic regions.</p><br/>
+
+                <h2><b>Providing the Right Choices for Our Clients</b></h2>
+                <hr/>
+                <p>JMAC begins by developing a clear understanding of its client’s back ground and objectives.
+                    Following from this, JMAC delves into a deep understanding of their client’s
+                    organizational culture and corporate structure.
+                    <br>Then based on this understanding, JMAC develops innovative customized
+                    solutions and action plans.
+                    <br>This is how JMAC achieves the results that clients expect. JMAC makes this possible
+                    through combining highly skilled and experienced consultants with the expert knowledge
+                    accumulated within the firm.</p><br/>
+
+                <h2><b>Our Consulting Philosophy</b></h2>
+                <hr/>
+                <p>JMAC adheres to three principles in its proven approach to business process innovation.
+                    First is Process Orientation. Our consultants know that truth is found on the shop
+                    floor – what the Japanese call “gemba”. Whether an actual “production” floor, an office, or
+                    even in the boardroom, “gemba” is where your core business processes are practiced,
+                    and it’s where our consultants spend the most time gathering information
+                    and effective improvement.</p>
+                <p>Second is Collaborative Team Approach. JMAC works alongside your people to create and
+                    implement effective solutions. That approach gives the client the benefits of both effective
+                    implementation and knowledge transfer.</p>
+                <p>The third principle is “No Waste/Lean”. In a competitive business world, identifying and
+                    eliminating waste is vitally important. JMAC has been a leader in developing Lean Manufacturing
+                    concepts and has successfully implemented lean concepts in many companies.</p>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <h2 class="heading">Services</h2>
+        <div class="mt-4 pt-5">
+            <div class="carousel slide pointer-event" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="About GCCI" class="services">
+                    </div>
+                    <div class="services_text">
+                        <div class="row services">
+                        <center>
+                            <h3 class="heading" style="font-size: 3rem; color: white;">Consulting</h3>
+                            <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
+                                we adopt the principles of Lean thinking in our consulting projects across all industries and processes.</p>
+                        </center>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'lean_manufacturing' %}">
+                                    Lean Manufacturing</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="{% url 'smart_factory' %}">
+                                    Smart Factory / IoT</a>
+                            </div>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-12">
+                                <a class="btn emptyBtn" href="">TPM</a>
+                            </div>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'innovation_management' %}">
+                                    Innovation Management</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="{% url 'services_and_sales' %}">
+                                    Service &amp; Sales Innovation</a>
+                            </div>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'organization_and_hr' %}">
+                                    Organization &amp; HR</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="">
+                                    Japan Market Entry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Training -->
+        <div id="training">
+            <div class="container">
+                <br/>
+                <h2 class="heading" style="color: #093a8c;">Training</h2>
+                <h1><b>JMAC's view about training</b></h1>
+                <hr/>
+                <p>JMAC provides training in Dojo style.<br>Dojo (Do= Way, path; Jo=place) means
+                    "the place where you practice the way".</p>
+                <p>Reminding of the place under the tree where it is believed that the Buddha received
+                    enlightenment, the so called “Dojo” is the place of meditation and training, in which monks
+                    and martial arts students practice the "rule". Therefore it can be said a "gym",
+                    in this case where a method gets learned and experienced.</p>
+                <p>We are aware of the essential role of human resources in improvement and innovation processes
+                    and we believe that training brings "value" when actually affecting organizational skills
+                    and behaviors that the company expects from one's own employees.
+                    In our view, effective training is closely linked to the practical application of the lessons
+                    learned. It is from application that you can understand and learn the
+                    methodology and its theoretical basis.</p>
+                <center>
+                        <img src="{% static 'assets/images/top 2.jpg' %}" alt="Training" class="image">
+                </center>
+                <p>Therefore, the training offered by JMAC aims at supporting the change program being
+                    undertaken by companies and is a main part of our operations management consulting.
+                    For this reason we have developed an original approach to training, made up of unique solutions,
+                    highly interactive and completely based on the "LEARN BY DOING" concept.
+                </p>
+                 <center>
+                        <img src="{% static 'assets/images/top 3.jpg' %}" alt="Training" class="image">
+                </center>
+            </div>
+            <div class="row" style="background-color: #e6fbff; height: 35%;">
+                <div class="container">
+                    <h1 class="image"><b>TRAINING</b></h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a class="btn train_Btn" href="{% url 'training_for_manufacture' %}">
+                                <b>Training for Manufactures</b></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn train_Btn" href="{% url 'p_course' %}">
+                                <b>P-Course</b></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn train_Btn" href="{% url 'kart_factory' %}">
+                                <b>Kart Factory</b></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a class="btn train_Btn" href="" style="margin-bottom: 15%">
+                                <b>TPM Training</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Locations -->
+        <h2 class="heading">Locations</h2>
+        <center>
+            <div class="row justify-content-center">
+                <p>JMAC currently has five subsidiaries; two in China, and one in Thailand, South Korea, and Italy respectively.
+                   <br>We provide services in every country by dispatching consultants from any one of our global offices.</p>
+            </div>
+            <div>
+                  <img src="{% static 'assets/images/img_locations.jpeg' %}" alt="Location" class="map">
+
+            </div>
+            <a class="btn fillBtn" href="">See More</a>
+        </center>
+
+        <!-- Global Offices -->
+        <h3 class="heading" style="font-size: 4rem;">Global Offices</h3>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row justify-content-center" style="background-color: #e6fbff;">
+                <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
+                    <img class="globalimage" src="{% static 'assets/images/case studies 3.jpg' %}" alt="">
+                </div>
+                <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
+                    <img class="globalimage" src="{% static 'assets/images/case studies 3.jpg' %}" alt="">
+                </div>
+                <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
+                    <img class="globalimage" src="{% static 'assets/images/case studies 3.jpg' %}" alt="">
+                </div>
+                <div class="col-md-2 mt-md-n5" style="padding-right: 1px; padding-left: 1px;">
+                    <img class="globalimage" src="{% static 'assets/images/case studies 3.jpg' %}" alt="" >
+                </div>
+                <a class="btn countrybtn">
+                    <h1><b>OTHER COUNTRIES</b></h1>
+                    <h5><b>CONTACT US</b></h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock landing %}
+
+
+
