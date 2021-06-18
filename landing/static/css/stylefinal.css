@@ -1,3 +1,7 @@
+/*main {*/
+/*    font-size: 1.5rem;*/
+/*}*/
+
 /* Navbar */
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
@@ -153,6 +157,11 @@
 
 .newscard:hover {
     background-color: #e0f5f9;!important;
+}
+
+.newspage {
+    padding: 10px 0;
+    font-size: 1.5rem;
 }
 
 /* About GCCI */
