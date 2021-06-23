@@ -52,3 +52,7 @@ def p_course(request):
 
 def kart_factory(request):
 	return render(request, 'kartfactory.html')
+
+
+def manufacturing(request):
+	return render(request, 'manufacturing.html')
