@@ -1,138 +1,132 @@
 {% extends 'Navbar.html' %}{% load static %}{% block landing %}
 
 <main>
-    <!-- Top Carousel -->
-    <div class="mt-4 pt-5">
-        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="{% static 'assets/images/Banner 1.jpg' %}" alt="Banner Image 1"
-                         class="responsive" style="max-height: 300px;">
-                </div>
-            </div>
-                <div class="services_text" style="padding: 8% 8%;">
-                    <center>
-                        <h1 class="text-light" style="font-size: 5rem;"><b>TRAINING</b></h1>
-                    </center>
-                </div>
+  <!-- Top Carousel -->
+  <div class="mt-4 pt-5">
+    <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src="{% static 'assets/images/Banner 1.jpg' %}" alt="Banner Image 1" class="responsive" style="max-height: 300px" />
         </div>
+      </div>
+      <div class="services_text" style="padding: 8% 8%">
+        <center>
+          <h1 class="text-light" style="font-size: 5rem"><b>TRAINING</b></h1>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-0 overflow-hidden">
+    <!-- Kart-Course -->
+    <div>
+      <div class="container">
+        <br />
+        <h2 class="blue_heading" style="color: #093a8c">Kart-Factory</h2>
+
+        <p>
+          The Kart Factory by JMAC ® (*) is not a game, but a full path and progressive towards Lean Production application. It is not limited to aspects of configuration that help its realization,
+          also addressing other key aspects of the transformation process.
+        </p>
+        <p>
+          Actually, one of the most frequent phenomenon in manufacturing processes is the high variability of performance.To ensure efficiency in process improvement and sustainability of the
+          performance achieved, it is necessary to influence behavior and stabilize the performance.
+        </p>
+        <p>To influence behavior is essential to develop and disseminate standards and allow the analytical depth that are the basis for:</p>
+        <ul>
+          <li>Performance reliability</li>
+          <li>Performance excellence</li>
+          <li>Continuous improvement: Problem Solving & Kaizen</li>
+          <li>Commitment</li>
+        </ul>
+        <p>The entire training program is based on 3 principles of teaching:</p>
+        <h4 class="headingbg">Principle of experience</h4>
+        <ul style="list-style-type: square">
+          <li>Learn by trying (experiential training)</li>
+          <li>Simulated but realistic learning environment</li>
+        </ul>
+        <br />
+        <h4 class="headingbg">Principle of error</h4>
+        <ul style="list-style-type: square">
+          <li>Learn by mistaking</li>
+          <li>Constructive reinterpretation of the errors committed</li>
+        </ul>
+        <br />
+        <h4 class="headingbg">Principle of teamwork</h4>
+        <ul style="list-style-type: square">
+          <li>Team learning</li>
+          <li>Learn from the exchange of ideas</li>
+        </ul>
+        <br />
+        <p>*Kart Factory Program is provided in Italy and Japan.</p>
+      </div>
     </div>
 
-    <div class="container-fluid px-0 overflow-hidden">
-
-        <!-- Kart-Course -->
-        <div>
-            <div class="container">
-                <br/>
-                <h2 class="blue_heading" style="color: #093a8c;">Kart-Factory</h2>
-
-                <p>The Kart Factory by JMAC ® (*) is not a game, but a full path and progressive towards Lean
-                    Production application. It is not limited to aspects of configuration that help its realization,
-                    also addressing other key aspects of the transformation process.</p>
-                <p>Actually, one of the most frequent phenomenon in manufacturing processes is the high variability
-                    of performance.To ensure efficiency in process improvement and sustainability of the performance
-                    achieved, it is necessary to influence behavior and stabilize the performance.</p>
-                <p>To influence behavior is essential to develop and disseminate standards and allow the analytical
-                    depth that are the basis for:</p>
-                <ul>
-                    <li>Performance reliability</li>
-                    <li>Performance excellence</li>
-                    <li>Continuous improvement: Problem Solving & Kaizen</li>
-                    <li>Commitment</li>
-                </ul>
-                <p>The entire training program is based on 3 principles of teaching:</p>
-                <h4 class="headingbg">Principle of experience</h4>
-                <ul style="list-style-type: square">
-                    <li>Learn by trying (experiential training)</li>
-                    <li>Simulated but realistic learning environment</li>
-                </ul><br/>
-                <h4 class="headingbg">Principle of error</h4>
-                <ul style="list-style-type: square">
-                    <li>Learn by mistaking</li>
-                    <li>Constructive reinterpretation of the errors committed</li>
-                </ul><br/>
-                <h4 class="headingbg">Principle of teamwork</h4>
-                <ul style="list-style-type: square">
-                    <li>Team learning</li>
-                    <li>Learn from the exchange of ideas</li>
-                </ul><br/>
-                <p>*Kart Factory Program is provided in Italy and Japan.</p>
-            </div>
-        </div>
-
-        <!-- Video link -->
-        <div class="container" style="margin-top: 100px;">
-            <center>
-                <h3>Watch the latest videoclip</h3>
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/WMweEpGlu_U"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-                        picture-in-picture" allowfullscreen>
+    <!-- Video link -->
+    <div class="container" style="margin-top: 100px">
+      <center>
+        <h3>Watch the latest videoclip</h3>
+        <iframe width="850" height="500" src="https://www.youtube.com/embed/XyP_7IZzpeI" title="YouTube video player"               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture" allowfullscreen>                        
                 </iframe>
-            </center>
-            <p>(*) Kart Factory by JMAC ® is a registered trademark of JMAC Europe.</p>
-        </div>
-
-        <!-- Services -->
-        <h2 class="heading">Services</h2>
-        <div class="mt-4 pt-5">
-            <div class="carousel slide pointer-event" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="About GCCI image"
-                             class="services" style="max-height: 330px;">
-                    </div>
-                    <div class="services_text">
-                        <div class="row services justify-content-md-center">
-                        <center>
-                            <h3 class="heading" style="font-size: 3rem; color: white;">Consulting</h3>
-                            <div class="col-md-6">
-                            <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
-                                <span class="br"></span>we adopt the principles of Lean thinking in our consulting
-                                projects across all industries and processes.</p>
-                            </div>
-                        </center>
-                        </div>
-                        <div class="row services">
-                            <div class="col-md-12">
-                                <a class="btn emptyBtn" style="max-width: 200px; height: 40px; font-size: 1.3rem;"
-                                   href="">See More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Training -->
-        <div class="row" style="background-color: #e6fbff; height: 35%;">
-            <div class="container">
-                <h1 class="image text-center"><b>TRAINING</b></h1>
-                <p class="text-center">Our well-versed consultants offer training programs filled with know-how on
-                    problem solving for business challenges, leveraging  their consultation experience.</p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a class="btn train_Btn" href="">
-                            <b>Training for Manufactures</b></a>
-                    </div>
-                    <div class="col-md-6">
-                        <a class="btn train_Btn" href="">
-                            <b>P-Course</b></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a class="btn train_Btn" href="">
-                            <b>Kart Factory</b></a>
-                    </div>
-                    <div class="col-md-6">
-                        <a class="btn train_Btn" href="" style="margin-bottom: 15%">
-                            <b>TPM Training</b></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </center>
+      <p>(*) Kart Factory by JMAC ® is a registered trademark of JMAC Europe.</p>
     </div>
+
+    <!-- Services -->
+    <h2 class="heading">Services</h2>
+    <div class="mt-4 pt-5">
+      <div class="carousel slide pointer-event" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="About GCCI image" class="services" style="max-height: 330px" />
+          </div>
+          <div class="services_text">
+            <div class="row services justify-content-md-center">
+              <center>
+                <h3 class="heading" style="font-size: 3rem; color: white">Consulting</h3>
+                <div class="col-md-6">
+                  <p>
+                    As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>, <span class="br"></span>we adopt the principles of Lean thinking in our consulting
+                    projects across all industries and processes.
+                  </p>
+                </div>
+              </center>
+            </div>
+            <div class="row services">
+              <div class="col-md-12">
+                <a class="btn emptyBtn" style="max-width: 200px; height: 40px; font-size: 1.3rem" href="">See More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training -->
+    <div class="row" style="background-color: #e6fbff; height: 35%">
+      <div class="container">
+        <h1 class="image text-center"><b>TRAINING</b></h1>
+        <p class="text-center">Our well-versed consultants offer training programs filled with know-how on problem solving for business challenges, leveraging their consultation experience.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="btn train_Btn" href=""> <b>Training for Manufactures</b></a>
+          </div>
+          <div class="col-md-6">
+            <a class="btn train_Btn" href=""> <b>P-Course</b></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="btn train_Btn" href=""> <b>Kart Factory</b></a>
+          </div>
+          <div class="col-md-6">
+            <a class="btn train_Btn" href="" style="margin-bottom: 15%"> <b>TPM Training</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 {% endblock landing %}
