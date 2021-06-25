@@ -56,3 +56,11 @@ def kart_factory(request):
 
 def manufacturing(request):
 	return render(request, 'manufacturing.html')
+
+
+def achievements(request):
+	return render(request, 'achievements.html')
+
+
+def AboutGCCI(request):
+	return render(request, 'aboutus.html')

@@ -17,5 +17,7 @@ path('Training/P-Course', p_course, name="p_course"),
 path('Training/Kart_Factory', kart_factory, name="kart_factory"),
 path('News/', news, name="news"),
 path('Manufacturing/', manufacturing, name="manufacturing"),
+path('Achievements/', achievements, name='achievements'),
+path('AboutGCCI/', AboutGCCI, name="AboutGCCI"),
 
 ]
