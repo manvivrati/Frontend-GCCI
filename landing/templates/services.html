@@ -74,12 +74,13 @@
             <div class="carousel slide pointer-event" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="About GCCI" class="services">
+                        <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="Consulting" class="services"
+                             style="height: 650px;">
                     </div>
                     <div class="services_text">
                         <div class="row services">
                         <center>
-                            <h3 class="heading" style="font-size: 3rem; color: white;">Consulting</h3>
+                            <h3 class="heading" style="color: white;">Consulting</h3>
                             <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
                                 we adopt the principles of Lean thinking in our consulting projects across all industries and processes.</p>
                         </center>
@@ -107,26 +108,6 @@
                             <div class="col-md-6">
                                 <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="{% url 'services_and_sales' %}">
                                     5S</a>
-                            </div>
-                        </div>
-                        <div class="row services">
-                            <div class="col-md-6">
-                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'organization_and_hr' %}">
-                                    Assessments</a>
-                            </div>
-                            <div class="col-md-6">
-                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="">
-                                    ISO</a>
-                            </div>
-                        </div>
-                        <div class="row services">
-                            <div class="col-md-6">
-                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'organization_and_hr' %}">
-                                    TS</a>
-                            </div>
-                            <div class="col-md-6">
-                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="">
-                                    All business analytical tool</a>
                             </div>
                         </div>
                     </div>
@@ -167,27 +148,28 @@
             </div>
             <div class="row" style="background-color: #e6fbff; height: 35%;">
                 <div class="container">
-                    <h1 class="image"><b>TRAINING</b></h1>
+                    <h1 class="heading">TRAINING</h1>
                     <div class="row">
-                        <div class="col-md-4">
-                            <a class="btn train_Btn" href="{% url 'training_for_manufacture' %}">
-                                <b>Training for Manufactures</b></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn train_Btn" href="{% url 'p_course' %}">
-                                <b>P-Course</b></a>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn train_Btn" href="{% url 'kart_factory' %}">
-                                <b>Kart Factory</b></a>
-                        </div>
+                    <div class="col-md-6">
+                        <a class="btn train_Btn" href="{% url 'training_for_manufacture' %}">
+                            <b>Assessments</b></a>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a class="btn train_Btn" href="" style="margin-bottom: 15%">
-                                <b>TPM Training</b></a>
-                        </div>
+                    <div class="col-md-6">
+                        <a class="btn train_Btn" href="{% url 'p_course' %}">
+                            <b>ISO</b></a>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="btn train_Btn" href="{% url 'kart_factory' %}">
+                            <b>TS</b></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn train_Btn" href="" style="margin-bottom: 10%">
+                            <b>All Business Analytical Tool</b></a>
+                    </div>
+                </div>
+
                 </div>
             </div>
         </div>

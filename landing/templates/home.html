@@ -65,7 +65,7 @@
         </div>
       </div>
     </div>
-    <a class="btn fillBtn" href="">See More</a>
+    <a class="btn fillBtn" href="{% url 'news' %}">See More</a>
 
     <!-- About GCCI -->
     <!--<h2 class="heading">About GCCI</h2>
@@ -88,7 +88,7 @@
     </div>-->
 
     <!-- Founded in -->
-    <h4 class="heading" style="font-size: 2.5rem; color: #144761"><i>Founded in 1942</i></h4>
+    <!--<h4 class="heading" style="font-size: 2.5rem; color: #144761"><i>Founded in 1942</i></h4>
     <center>
       <div class="row justify-content-center">
         <div class="col-md-6">
@@ -99,7 +99,7 @@
           <a class="btn fillBtn" href="">See More</a>
         </div>
       </div>
-    </center>
+    </center>-->
 
     <!-- Achievements  -->
     <div class="mt-4 pt-5">
@@ -142,56 +142,51 @@
 
     <!-- Services -->
     <h2 class="heading">Services</h2>
-    <div class="mt-4 pt-5">
-      <div class="carousel slide pointer-event" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="Services Image" class="services" />
-          </div>
-          <div class="services_text">
-            <div class="row services">
-              <center>
-                <h3 class="heading" style="font-size: 3rem; color: white">Consulting</h3>
-                <p>
-                  As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
-                  <span class="br hiddenSp"></span>we adopt the principles of Lean thinking in our
-                  consulting projects across all industries and processes.
-                </p>
-              </center>
+        <div class="mt-4 pt-5">
+            <div class="carousel slide pointer-event" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="{% static 'assets/images/about_jmac.jpg' %}" alt="Consulting" class="services"
+                             style="height: 650px;">
+                    </div>
+                    <div class="services_text">
+                        <div class="row services">
+                        <center>
+                            <h3 class="heading" style="color: white;">Consulting</h3>
+                            <p>As the consulting firm that contributed to the foundations of Lean/TPS and TPM<sup>®</sup>,
+                                we adopt the principles of Lean thinking in our consulting projects across all industries and processes.</p>
+                        </center>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'lean_manufacturing' %}">
+                                    TPM</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="{% url 'smart_factory' %}">
+                                    TQM</a>
+                            </div>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-12">
+                                <a class="btn emptyBtn" href="">Lean</a>
+                            </div>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%;" href="{% url 'innovation_management' %}">
+                                    6 alpha</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%;" href="{% url 'services_and_sales' %}">
+                                    5S</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row services">
-              <div class="col-md-6">
-                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%" href=""> Lean Manufacturing</a>
-              </div>
-              <div class="col-md-6">
-                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%" href=""> Smart Factory / IoT</a>
-              </div>
-            </div>
-            <div class="row services">
-              <div class="col-md-12">
-                <a class="btn emptyBtn" href="">TPM</a>
-              </div>
-            </div>
-            <div class="row services">
-              <div class="col-md-6">
-                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%" href=""> Innovation Management</a>
-              </div>
-              <div class="col-md-6">
-                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%" href=""> Service & Sales Innovation</a>
-              </div>
-            </div>
-            <div class="row services">
-              <div class="col-md-6">
-                <a class="btn emptyBtn" style="margin-top: 8%; margin-right: 3%" href=""> Organization & HR</a>
-              </div>
-              <div class="col-md-6">
-                <a class="btn emptyBtn" style="margin-top: 8%; margin-left: 3%" href=""> Japan Market Entry</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+
 
     <!-- Training -->
     <h4 class="heading" style="font-size: 2.5rem; color: #144761"><i>Training</i></h4>
@@ -201,7 +196,7 @@
           <p><i>Our well-versed consultants offer training programs filled with know-how on problem solving for
               business challenges, <span class="br hiddenSp"></span>leveraging their consultation
               experience.</i></p>
-          <a class="btn fillBtn" href="">See More</a>
+          <a class="btn fillBtn" href="{% url 'services' %}#training">See More</a>
         </div>
       </div>
     </center>
