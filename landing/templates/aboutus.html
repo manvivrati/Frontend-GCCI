@@ -1,139 +1,57 @@
 {% extends 'Navbar.html' %}{% load static %}{% block landing %}
 
 <main>
-    <!-- Top Carousel -->
+     <!-- Top Carousel -->
     <div class="mt-4 pt-5">
-        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom: 20px;">
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="{% static 'assets/images/Banner 2.jpg' %}"
-                         alt="Banner Image 2" class="responsive" />
-                </div>
-                <div class="mainVisual_text" >
-                    <h2 style="font-size: 5rem; padding: 50px 50px;">NEWS</h2>
+                    <img src="{% static 'assets/images/Banner 1.jpg' %}" alt="About US Banner" class="responsive">
                 </div>
             </div>
+                <div class="services_text">
+                    <p><i>GCCI is a Business Consulting and Services co-operation group company formed advisory
+                        councils with corporate seniors & Global experts for focused objectives.</i></p>
+                </div>
         </div>
     </div>
 
     <div class="container-fluid px-0 overflow-hidden">
-        <!-- Tabs -->
-        <div class="row justify-content-md-center">
-            <div class="col-md-10">
-                <ul class="nav nav-tabs justify-content-md-center">
-                    <li class="nav-item newspage">
-                        <a class="nav-link active" aria-current="page" href="#">ALL</a>
-                    </li>
-                    <li class="nav-item newspage">
-                        <a class="nav-link" href="#">NEWS & TOPICS</a>
-                    </li>
-                    <li class="nav-item newspage">
-                        <a class="nav-link" href="#">SEMINAR/ EVENTS</a>
-                    </li>
-                    <li class="nav-item newspage">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">PRESS ROOM</a>
-                    </li>
+        <div>
+            <div class="container">
+                <br/>
+                <h2 class="blue_heading" style="color: #093a8c;">About Us</h2>
+                <p>We are having service alliances with <b>Global expert and JIPM Lead Assessor Mr. Yoshitaka
+                    Murase from Japan </b> with his advisory guidance, Also proffering service alliance from
+                    various experts from overseas and India for the world best/advanced concepts
+                    & specialized/unique systems for offering the best global practices and services.</p>
+
+                <h2><b>Director's Journey</b></h2>
+                <hr/>
+                <center>
+                    <img src="{% static 'assets/images/director.jpg' %}" alt="director" class="image" style="padding-bottom: 1%;">
+                    <p><b>Yuvaraj Sithaiyan<br/>Director, Lead - Enterprise System Design</b></p>
+                </center>
+                <ul>
+                    <li>GCCI operating from Pune, India. Founded by <b>Mr.Yuvaraj Sithaiyan</b>, Mechanical Engineer with
+                        over all 32 Yrs. experience. <b>JIPM Certified </b>TPM Facilitator (Year 2004).</li>
+                    <li>GCCI teams collective experience in TPM will adds to<b>175+ Yrs.</b>  & in Manufacturing
+                        <b>77+ Yrs.</b> We spread across India.</li>
+                    <li>Conducted Trainings Approx.<b>7,21,000 + man Hrs.</b>  for<b>1,06,000 people</b>  across the Country
+                        and Global level.</li>
+                    <li>Supported for accomplishing <b>45 JIPM Awards </b>(Special+ Consistency + Excellence Awards)</li>
+                    <li>Associated and Challenged –<b> 90+ JIPM Assessments</b></li>
+                    <li>Supporting to Rejuvenate and Sustain The Achieved<b>TPM Results For 16+ Companies</b> </li>
+                    <li>Assessor for (EFQM) Business Excellence model for<b>9 Assessments</b> .</li>
+                    <li>TPM Health Check-up Assessments done for <b>61+</b>  Excellence and Consistency Levels & Special
+                    Awards.</li>
+                    <li>Instrumental for developing many <b> Success Strategies</b> and TPM Specific training material
+                    and Programs.</li>
                 </ul>
             </div>
         </div>
-
-        <!-- NewsCards -->
-        <div class="row-lg-10 justify-content-center" style="margin-top: 20px;">
-            <div class="card-group justify-content-md-center">
-                <div class="col-md-3 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">20 Aug 2020
-                            <span class="badge badge-pill badge-info">NEWS/ Events</span></h4>
-                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
-                            can see it soon.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row-lg-10 justify-content-center" style="margin-top: 20px;">
-            <div class="card-group justify-content-md-center">
-                <div class="col-md-3 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">20 Aug 2020
-                            <span class="badge badge-pill badge-info">NEWS/ Events</span></h4>
-                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
-                            can see it soon.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row-lg-10 justify-content-center" style="margin-top: 20px;">
-            <div class="card-group justify-content-md-center">
-                <div class="col-md-3 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">20 Aug 2020
-                            <span class="badge badge-pill badge-info">NEWS/ Events</span></h4>
-                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
-                            can see it soon.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
+
 </main>
 
 {% endblock landing %}
