@@ -6,133 +6,198 @@
         <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom: 20px;">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="{% static 'assets/images/Banner 2.jpg' %}"
+                    <img src="{% static 'assets/images/achievements.jpg' %}"
                          alt="Banner Image 2" class="responsive" />
                 </div>
                 <div class="mainVisual_text" >
-                    <h2 style="font-size: 5rem; padding: 50px 50px;">NEWS</h2>
+                    <h2 style="font-size: 4.5rem; padding: 20px 20px;">OUR ACHIEVEMENTS</h2>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container-fluid px-0 overflow-hidden">
-        <!-- Tabs -->
+        <!-- Pie Charts -->
+        <div class="row-lg-2">
+            <div class="col">
+                <h2 class="heading">
+                    <div class="counter">
+                        <!--<h2 class="timer count-title count-number" style="color: deeppink;" data-to="45" data-speed="1500">45</h2>-->
+                        45 JIPM AWARDS WITH 90 ASSESSMENTS
+                    </div>
+                </h2>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-md-center">
+            <div class="col-xl-3">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <h4 class="mt-0 header-title">Student Enrolled From Different colleges</h4>
+                        <canvas id="collegeData"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <h4 class="mt-0 header-title">Student Enrolled From Different colleges</h4>
+                        <canvas id="collegeData"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <h4 class="mt-0 header-title">Student Enrolled From Different Region</h4>
+                        <canvas id="regionData"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tangible Results-->
+        <h2 class="heading"> Tangible Results</h2>
         <div class="row justify-content-md-center">
-            <div class="col-md-10">
-                <ul class="nav nav-tabs justify-content-md-center">
-                    <li class="nav-item newspage">
-                        <a class="nav-link active" aria-current="page" href="#">ALL</a>
-                    </li>
-                    <li class="nav-item newspage">
-                        <a class="nav-link" href="#">NEWS & TOPICS</a>
-                    </li>
-                    <li class="nav-item newspage">
-                        <a class="nav-link" href="#">SEMINAR/ EVENTS</a>
-                    </li>
-                    <li class="nav-item newspage">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">PRESS ROOM</a>
-                    </li>
-                </ul>
+            <div class="col-md-6">
+                <div class="table-responsive table-bordered">
+                    <table class="table table-striped mb-0 table-hover">
+                        <thead style="background-color: #15aad5; color: white;">
+                            <tr class="text-center" style="font-size: x-large; text-transform: uppercase;">
+                                <th>Category</th>
+                                <th>Achieved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EBIDTA </td>
+                                <td>25%
+                                    <span class="mdi mdi-arrow-up-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ITR RATIO </td>
+                                <td>Improved Min. 4 to Max. 68
+                                    <span class="mdi mdi-arrow-up-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>TURNOVER </td>
+                                <td>New Business added
+                                    <span class="mdi mdi-plus-thick status-icon status-default"></span>
+                                     , Turnover Doubled
+                                    <span class="mdi mdi-plus-thick status-icon status-default"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MANUFACTURING COST </td>
+                                <td>31%
+                                    <span class="mdi mdi-arrow-down-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ASSET UTILIZATION RATIO </td>
+                                <td>Improved Min. 31% to Max. >75%
+                                    <span class="mdi mdi-arrow-up-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CUSTOMER COMPLAINT </td>
+                                <td>Achieved Zero
+                                    <span class="mdi mdi-arrow-down-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>INPROCESS REJECTION </td>
+                                <td>Achieved Zero
+                                    <span class="mdi mdi-arrow-down-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>INHOUSE REJECTION </td>
+                                <td>Achieved Close to Zero
+                                    <span class="mdi mdi-arrow-down-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>S&A RANK MC BREAKDOWN </td>
+                                <td>Achieved Zero
+                                    <span class="mdi mdi-arrow-down-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PLANT LEVEL BREAKDOWN </td>
+                                <td>98%
+                                    <span class="mdi mdi-arrow-down-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PLANT LEVEL ACCIDENT </td>
+                                <td>Achieved & Sustained Zero
+                                    <span class="mdi mdi-arrow-down-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
-        <!-- NewsCards -->
-        <div class="row-lg-10 justify-content-center" style="margin-top: 20px;">
-            <div class="card-group justify-content-md-center">
-                <div class="col-md-3 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">20 Aug 2020
-                            <span class="badge badge-pill badge-info">NEWS/ Events</span></h4>
-                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
-                            can see it soon.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row-lg-10 justify-content-center" style="margin-top: 20px;">
-            <div class="card-group justify-content-md-center">
-                <div class="col-md-3 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">20 Aug 2020
-                            <span class="badge badge-pill badge-info">NEWS/ Events</span></h4>
-                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
-                            can see it soon.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
+        <!-- Intangible Results-->
+        <h2 class="heading"> Intangible Results</h2>
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <div class="table-responsive table-bordered">
+                    <table class="table table-striped mb-0 table-hover">
+                        <thead style="background-color: #15aad5; color: white;">
+                            <tr class="text-center" style="font-size: x-large; text-transform: uppercase;">
+                                <th>Category</th>
+                                <th>Achieved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EMPLOYEE ENGAGEMENT LEVEL </td>
+                                <td>5-10 Times
+                                    <span class="mdi mdi-arrow-up-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DAILY WORK MANAGEMENT </td>
+                                <td>Established Objectives based
+                                    <span class="mdi mdi-arrow-up-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EMPLOYEE SATISFACTION LEVEL </td>
+                                <td>Multiplied
+                                    <span class="mdi mdi-plus-thick status-icon status-default"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PEOPLE KNOWLEDGE AND CAPABILITY </td>
+                                <td>Improved Exponentially
+                                    <span class="mdi mdi-arrow-up-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ORGANISATION CULTURAL </td>
+                                <td>Transformation with Teamwork
+                                    <span class="mdi mdi-arrow-up-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>STAKEHOLDER DELIGHT </td>
+                                <td>Met Beyond Expectations
+                                    <span class="mdi mdi-arrow-up-bold status-icon status-active"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
 
-        <div class="row-lg-10 justify-content-center" style="margin-top: 20px;">
-            <div class="card-group justify-content-md-center">
-                <div class="col-md-3 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">20 Aug 2020
-                            <span class="badge badge-pill badge-info">NEWS/ Events</span></h4>
-                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
-                            can see it soon.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-3 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </main>
 
