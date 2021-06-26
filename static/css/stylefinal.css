@@ -1,25 +1,3 @@
-/* Icon Styling */
-.status-active {
-    color: #28a745;
-}
-
-.status-icon {
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.status-deactive {
-    color: #dc3545;
-}
-
-.status-default {
-    color: #007bff;
-}
-
-.status-edit {
-    color: #ffc107;
-}
-
 /* Navbar */
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
