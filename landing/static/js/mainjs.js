@@ -21,3 +21,79 @@ $(document).ready(function(){
         }]
     });
 });
+
+// Achievements charts
+$(document).ready(function(){
+    var ctx = $("#firstcanvas").get(0).getContext("2d");
+    var data = [
+        {
+            value: 14,
+            color: "cornflowerblue",
+            highlight: "lightskyblue",
+            label: "JavaScript"
+        },
+        {
+            value: 9,
+            color: "lightgreen",
+            highlight: "yellowgreen",
+            label: "HTML"
+        },
+        {
+            value: 1,
+            color: "orange",
+            highlight: "darkorange",
+            label: "CSS"
+        }
+    ];
+    var chart = new Chart(ctx).Doughnut(data);
+});
+
+$(document).ready(function(){
+    var ctx = $("#secondcanvas").get(0).getContext("2d");
+    var data = [
+        {
+            value: 16,
+            color: "cornflowerblue",
+            highlight: "lightskyblue",
+            label: "JavaScript"
+        },
+        {
+            value: 2,
+            color: "lightgreen",
+            highlight: "yellowgreen",
+            label: "HTML"
+        },
+        {
+            value: 3,
+            color: "orange",
+            highlight: "darkorange",
+            label: "CSS"
+        }
+    ];
+    var chart = new Chart(ctx).Doughnut(data);
+});
+
+$(document).ready(function(){
+    var ctx = $("#thirdcanvas").get(0).getContext("2d");
+    var data = [
+        {
+            value: 15,
+            color: "cornflowerblue",
+            highlight: "lightskyblue",
+            label: "JavaScript"
+        },
+        {
+            value: 10,
+            color: "lightgreen",
+            highlight: "yellowgreen",
+            label: "HTML"
+        },
+        {
+            value: 8,
+            color: "orange",
+            highlight: "darkorange",
+            label: "CSS"
+        }
+    ];
+    var chart = new Chart(ctx).Doughnut(data);
+});
