@@ -39,24 +39,28 @@ $(document).ready(function() {
     });
 });
 
-// Achievements charts
 
+// Achievements charts
 $(document).ready(function() {
         var ctx = $("#chart-line1");
         var myLineChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ["Spring", "Fall", "Winter"],
+                labels: ["Special Award", "CONST. in Excellence Award", "Excellence CAT.A Award"],
                 datasets: [{
-                    data: [1200, 800, 200],
-                    backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(200, 50, 255, 0.5)", "rgba(0, 100, 255, 0.5)"]
+                    data: [1, 9, 14],
+                    backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(200, 50, 255, 0.5)", "rgba(100, 255, 0, 0.5)"]
                 }]
             },
             options: {
                 title: {
                     display: true,
-                    text: 'Weather'
-                }
+                    text: 'GCCI'
+                },
+                legend: {
+                    position: "right",
+                    align: "middle"
+                },
             }
         });
     });
@@ -66,16 +70,16 @@ $(document).ready(function() {
         var myLineChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ["Spring", "Summer", "Fall", "Winter"],
+                labels: ["CONST. in Excellence Award", "Excellence CAT.B Award", "Excellence CAT.A Award"],
                 datasets: [{
-                    data: [1200, 1700, 800, 200],
-                    backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(100, 255, 0, 0.5)", "rgba(200, 50, 255, 0.5)", "rgba(0, 100, 255, 0.5)"]
+                    data: [2, 3, 16],
+                    backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(100, 255, 0, 0.5)", "rgba(200, 50, 255, 0.5)"]
                 }]
             },
             options: {
                 title: {
                     display: true,
-                    text: 'Weather'
+                    text: 'GCCI'
                 }
             }
         });
@@ -86,16 +90,16 @@ $(document).ready(function() {
         var myLineChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ["Spring", "Summer", "Fall", "Winter"],
+                labels: ["Special Award", "Excellence CAT.A Award", "CONST. in EXCELLENCE AWARD"],
                 datasets: [{
-                    data: [1200, 1700, 800, 200],
-                    backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(100, 255, 0, 0.5)", "rgba(200, 50, 255, 0.5)", "rgba(0, 100, 255, 0.5)"]
+                    data: [10, 8, 15],
+                    backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(100, 255, 0, 0.5)", "rgba(200, 50, 255, 0.5)"]
                 }]
             },
             options: {
                 title: {
                     display: true,
-                    text: 'Weather'
+                    text: 'GCCI'
                 }
             }
         });
