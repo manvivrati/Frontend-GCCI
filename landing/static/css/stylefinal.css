@@ -806,3 +806,41 @@
     background: #fff;
     border-width: 0;
 }
+
+/* Accomplish */
+.footericon {
+    color: white;
+    width: 80px;
+    height: 80px;
+}
+
+/* Tabs */
+.sectiont {
+    padding: 60px 0;
+}
+
+#tabs{
+	background: white;
+    color: #1c0303;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #0a0101;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
