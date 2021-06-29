@@ -19,5 +19,10 @@ path('News/', news, name="news"),
 path('Manufacturing/', manufacturing, name="manufacturing"),
 path('Achievements/', achievements, name='achievements'),
 path('AboutGCCI/', AboutGCCI, name="AboutGCCI"),
+path('environment/', environment, name="Environment"),
+path('education/', education, name="Education"),
+path('spirituality/', spirituality, name="Spirituality"),
+path('culture/', culture, name="Culture"),
+
 
 ]
