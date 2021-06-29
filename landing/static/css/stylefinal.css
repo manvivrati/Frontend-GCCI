@@ -5,13 +5,13 @@
 .navbar-light .navbar-nav .show > .nav-link {
     color: #0c1616;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #0c1616;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 0.5em 1em;
 }
 
@@ -22,7 +22,7 @@
 .navbar-light .navbar-nav .nav-link:active {
     color: #21489e;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 0.5em 1em;
 }
 
@@ -251,17 +251,22 @@
 
 /* Footer */
 .footer{
-    width: 70%;
-    height: auto;
-    padding-top: 5%;
-    padding-bottom: 3%;
+    overflow: hidden;
+    margin-top: 80px;
+    background: #02122f;
+    color: white !important;
+    margin-bottom: 0;
+    padding-top: 10px;
 }
 
-.footericon {
-    color: white;
-    width: 80px;
-    height: 80px;
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
 }
+
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
 
 /* Services */
 .services {
