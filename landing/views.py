@@ -64,3 +64,15 @@ def achievements(request):
 
 def AboutGCCI(request):
 	return render(request, 'aboutus.html')
+
+def environment(request):
+	return render(request, "environment.html")
+
+def education(request):
+	return render(request, "education.html")
+
+def spirituality(request):
+	return render(request, "spirituality.html")
+
+def culture(request):
+	return render(request, "culture.html")
