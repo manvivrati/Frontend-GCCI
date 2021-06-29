@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # Apps
     'landing',
     'testimonial',
+    'gcci_admin'
+    
 ]
 
 MIDDLEWARE = [
