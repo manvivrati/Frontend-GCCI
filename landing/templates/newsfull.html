@@ -1,0 +1,78 @@
+{% extends 'Navbar.html' %}{% load static %}{% block landing %}
+
+<main>
+    <!-- Top Carousel -->
+    <div class="mt-4 pt-5">
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom: 20px;">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{% static 'assets/images/Banner 2.jpg' %}"
+                         alt="Banner Image 2" class="responsive" />
+                </div>
+                <div class="mainVisual_text" >
+                    <p>NEWS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 overflow-hidden">
+
+    <!-- News-article -->
+    <div class="container">
+        <br />
+        <p class="text-right">17 Sep 2019 <span class="badge badge-pill badge-info">Seminar/ Events</span></p>
+        <h3 class="heading">KAIZEN for Business Improvement and Industrial Development.</h3>
+        <hr/>
+
+        <p>
+          The Kart Factory by JMAC ® (*) is not a game, but a full path and progressive towards Lean Production application. It is not limited to aspects of configuration that help its realization,
+          also addressing other key aspects of the transformation process.
+        </p>
+        <p>
+          Actually, one of the most frequent phenomenon in manufacturing processes is the high variability of performance.To ensure efficiency in process improvement and sustainability of the
+          performance achieved, it is necessary to influence behavior and stabilize the performance.
+        </p>
+        <p>To influence behavior is essential to develop and disseminate standards and allow the analytical depth that are the basis for:</p>
+        <ul>
+          <li>Performance reliability</li>
+          <li>Performance excellence</li>
+          <li>Continuous improvement: Problem Solving & Kaizen</li>
+          <li>Commitment</li>
+        </ul>
+        <p>The entire training program is based on 3 principles of teaching:</p>
+        <h4 class="headingbg">Principle of experience</h4>
+        <ul style="list-style-type: square">
+          <li>Learn by trying (experiential training)</li>
+          <li>Simulated but realistic learning environment</li>
+        </ul>
+        <br />
+        <h4 class="headingbg">Principle of error</h4>
+        <ul style="list-style-type: square">
+          <li>Learn by mistaking</li>
+          <li>Constructive reinterpretation of the errors committed</li>
+        </ul>
+        <br />
+        <h4 class="headingbg">Principle of teamwork</h4>
+        <ul style="list-style-type: square">
+          <li>Team learning</li>
+          <li>Learn from the exchange of ideas</li>
+        </ul>
+        <br />
+      </div>
+    </div>
+
+    <!-- Video link -->
+    <div class="container" style="margin-top: 50px">
+        <center>
+        <h3>Watch the latest videoclip</h3>
+        <iframe width="850" height="500" src="https://www.youtube.com/embed/XyP_7IZzpeI" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture" allowfullscreen>
+                </iframe>
+        </center>
+      <!--<p>(*) Kart Factory by JMAC ® is a registered trademark of JMAC Europe.</p>-->
+    </div>
+</main>
+
+{% endblock landing %}
