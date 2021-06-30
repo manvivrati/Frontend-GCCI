@@ -55,7 +55,15 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'achievements' %}">Our Achievements</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'AboutGCCI' %}">About GCCI</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">CSR</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CSR</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item nav-link" href="{% url 'Environment' %}">Environment</a>
+                            <a class="dropdown-item nav-link" href="{% url 'Education' %}">Education</a>
+                            <a class="dropdown-item nav-link" href="{% url 'Spirituality' %}">Spirituality</a>
+                            <a class="dropdown-item nav-link" href="{% url 'Culture' %}">Culture</a>
+                        </div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
                 </ul>
             </div>
