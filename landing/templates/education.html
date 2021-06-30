@@ -6,11 +6,11 @@
         <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom: 20px;">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="{% static 'assets/images/Banner 1.jpg' %}"
+                    <img src="{% static 'assets/images/Banner 2.jpg' %}"
                          alt="Banner Image 2" class="responsive" />
                 </div>
                 <div class="mainVisual_text" >
-                    <h2 style="font-size: 5rem; padding: 50px 50px;">Education</h2>
+                    <p>Education</p>
                 </div>
             </div>
         </div>
@@ -26,37 +26,51 @@
                             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                                 <a class="nav-item nav-link" href="{% url 'Environment' %}">Environment</a>
                                 <a class="nav-item nav-link active" href="{% url 'Education' %}">Education</a>
-                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
-                                <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
+                                <a class="nav-item nav-link" href="{% url 'Spirituality' %}">Spirituality</a>
+                                <a class="nav-item nav-link" href="{% url 'Culture' %}">Culture</a>
                             </div>
                         </nav>
                         <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui
-                                minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt
-                                est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt
-                                irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis
-                                veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation
-                                mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit
-                                occaecat anim ullamco ad duis occaecat ex.
-                            </div>
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                chlt et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                            </div>
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                            </div>
-                            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                            <div class="tab-pane fade show active">
+                               <p>Education is the most powerful tool to drive positive change in the world. Knowledge and
+                                skills are key to building careers, confidence and quality of life.<br/>
+                                By providing transformative education and vocational training to more and more people,
+                                we are co-creating a healthier and progressive society.</p>
+                                <div class="container py-4">
+                                    <!-- Card Start -->
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/XyP_7IZzpeI"
+                                                            title="YouTube video player" frameborder="0"
+                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top: 0">
+                                            <div class="col-lg-7" style="padding-right: 0;">
+                                                <iframe width="100%" height="350" src="https://www.youtube.com/embed/XyP_7IZzpeI"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                            <div class="col-lg-5" style="padding-left: 2px">
+                                                <iframe width="100%" height="350" src="https://www.youtube.com/embed/XyP_7IZzpeI"
+                                                        title="YouTube video player" frameborder="0" class="hover"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of card -->
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Tabs -->
-
+        <!-- Tabs closed -->
     </div>
 </main>
 
