@@ -1,0 +1,35 @@
+{% extends 'Navbar.html' %}{% load static %}{% block landing %}
+
+<main>
+    <!-- Top Carousel -->
+    <div class="mt-4 pt-5">
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom: 20px;">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{% static 'assets/images/Banner 2.jpg' %}"
+                         alt="Banner Image 2" class="responsive" />
+                </div>
+                <div class="mainVisual_text" >
+                    <p>TESTIMONIALS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0 overflow-hidden">
+
+    <!-- Client speaks -->
+    <div class="container">
+        <br />
+        <h3 class="heading">Client Speaks</h3>
+
+        
+
+        <br />
+      </div>
+    </div>
+
+
+</main>
+
+{% endblock landing %}

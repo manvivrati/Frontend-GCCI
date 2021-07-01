@@ -84,3 +84,7 @@ def spirituality(request):
 
 def culture(request):
 	return render(request, "culture.html")
+
+
+def testimonials(request):
+	return render(request, "testimonials.html")
