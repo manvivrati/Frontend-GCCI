@@ -25,5 +25,6 @@ path('education/', education, name="Education"),
 path('spirituality/', spirituality, name="Spirituality"),
 path('culture/', culture, name="Culture"),
 path('testimonials/', testimonials, name="Testimonials"),
+path('contactus/', contactus, name="contactus"),
 
 ]

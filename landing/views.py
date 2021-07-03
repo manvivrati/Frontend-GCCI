@@ -88,3 +88,7 @@ def culture(request):
 
 def testimonials(request):
 	return render(request, "testimonials.html")
+
+
+def contactus(request):
+	return render(request, "contactus.html")

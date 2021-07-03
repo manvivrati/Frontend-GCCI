@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>GCCI</title>
+
+    <!-- Bootstrap 4.5 by links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Icons from iconify.design -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <!--Font awesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+
+    <!-- CSS linked -->
+    <link rel="stylesheet" href="{% static 'css/stylefinal.css' %}" />
+
+    <!-- JS linked -->
+    <script src="{% static 'js/mainjs.js' %}"></script>
+
+    <!-- Charts and JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- For Counter and footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid px-0 overflow-hidden">
+
+    <div class="container-fluid px-0 overflow-hidden contact_bg">
+        <h4 style="padding-left: 20px;">CONTACT US</h4>
+    </div>
+
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="container-fluid contact_content">
+
+        <div class="form-group">
+            <div><label class="contact_head">Name:</label></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <select required class="form-control">
+                        <option hidden selected>Salutation</option>
+                        <option >Mr.</option>
+                        <option >Mrs.</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input required class="form-control" placeholder="First Name" />
+                </div>
+                <div class="col-md-4">
+                    <input required class="form-control" placeholder="Last Name" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-6">
+                <div>
+                    <label class="contact_head">Job Title:</label>
+                </div>
+                <div>
+                    <input required class="form-control" placeholder="Job Title" />
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <div>
+                    <label class="contact_head">Company:</label>
+                </div>
+                <div>
+                    <input required class="form-control" placeholder="Company" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+            <div class="col-md-6">
+                <label class="contact_head">Company Location:</label>
+            </div></div>
+            <div class="row">
+            <div class="col-md-6">
+                <input required class="form-control" placeholder="Company location" />
+            </div></div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-6">
+                <div>
+                    <label class="contact_head">Email:</label>
+                </div>
+                <div>
+                    <input required class="form-control" placeholder="Email" />
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <div>
+                    <label class="contact_head">Phone:</label>
+                </div>
+                <div>
+                    <input required class="form-control" placeholder="Phone" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-6">
+                <div>
+                    <label class="contact_head">Industry:</label>
+                </div>
+                <div>
+                    <select required class="form-control">
+                        <option hidden selected>Select the Industry</option>
+                        <option>Automotive</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <div>
+                    <label class="contact_head">Interested In:</label>
+                </div>
+                <div>
+                    <select required class="form-control">
+                        <option hidden selected>Select your Interest</option>
+                        <option>Management System</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div><label class="contact_head">Where Did You Hear About Us?</label></div>
+            <div>
+                <select required class="form-control">
+                    <option hidden selected>Select from where did you hear about us?</option>
+                    <option>Friends</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label class="contact_head">How can we help?<br/>
+                <small class="contact_head" style="padding-bottom: 10px;">If you are enquiring about a course please
+                    let us know for how many delegates you require training?</small></label>
+            </div>
+            <div>
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6 text-left">
+                <button class="btn">
+                    <span class="iconify" data-icon="noto-v1:back-arrow" data-inline="false" href="{% url 'home' %}"
+                          data-width="40" data-height="40"></span>
+                </button>
+            </div>
+            <div class="col-md-6 text-right">
+                <button class="btn" style="color: #15aad5;" data-toggle="modal" data-target="#submitcontact"><b>SUBMIT </b>
+                    <span class="iconify" data-icon="fa-solid:paper-plane" data-inline="false" style="color: #15aad5;"
+                          data-width="25" data-height="25"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </form>
+    </div>
+
+    <!-- Modal for organisation -->
+    <div class="modal fade bs-example-modal-center" id="submitcontact" tabindex="-1" role="dialog"
+         aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title mt-0">THANK YOU</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" >
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <p>Your Contact details have been successfully submitted.</p>
+                    </div>
+                    <input type="hidden" name="pk">
+                    <div class="form-group">
+                        <center>
+                            <button type="submit" name="submit" class="btn modalbtn"
+                                    href="{% url 'home' %}">GET BACK TO HOME PAGE</button>
+                        </center>
+                    </div>
+                </form>
+          </div>
+        </div>
+        </div>
+    </div>
+</body>

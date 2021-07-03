@@ -971,3 +971,21 @@ small {
 .owl-carousel button.owl-dot {
     outline: 0;
 }
+
+
+/* Contact Us */
+.contact_bg {
+    color: white;
+    background-color: #15aad5;
+    padding: 15px 15px;
+}
+
+.contact_content {
+    padding: 15px 50px;
+}
+
+.contact_head {
+    color: #1596c1;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
