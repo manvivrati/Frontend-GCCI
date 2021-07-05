@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>GCCI</title>
 
@@ -32,42 +32,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Slider JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="{% url 'home' %}">
-                <b><i><h2 style="color: #15aad5; font-family: 'Arial Black';">GCCI</h2></i></b>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'news' %}">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'manufacturing' %}">Manufacturing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'achievements' %}">Our Achievements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'AboutGCCI' %}">About GCCI</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'Testimonials' %}">Testimonials</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CSR</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item nav-link" href="{% url 'Environment' %}">Environment</a>
-                            <a class="dropdown-item nav-link" href="{% url 'Education' %}">Education</a>
-                            <a class="dropdown-item nav-link" href="{% url 'Spirituality' %}">Spirituality</a>
-                            <a class="dropdown-item nav-link" href="{% url 'Culture' %}">Culture</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'contactus' %}">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <b
+            ><i><h2 style="color: #15aad5; font-family: 'Arial Black'">GCCI</h2></i></b
+          >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'news' %}">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'manufacturing' %}">Manufacturing</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'achievements' %}">Our Achievements</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'AboutGCCI' %}">About GCCI</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'Testimonials' %}">Testimonials</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CSR</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item nav-link" href="{% url 'Environment' %}">Environment</a>
+                <a class="dropdown-item nav-link" href="{% url 'Education' %}">Education</a>
+                <a class="dropdown-item nav-link" href="{% url 'Spirituality' %}">Spirituality</a>
+                <a class="dropdown-item nav-link" href="{% url 'Culture' %}">Culture</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'contactus' %}">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <div class="">{% block landing %}{% endblock landing %}</div>
@@ -75,16 +76,15 @@
     <!-- Locations -->
     <h2 class="heading">Locations</h2>
     <div class="container-fluid">
-        <div class="text-center">
-            <p>GCCI has visited the following countries with purpose.
-            </p>
-        </div>
+      <div class="text-center">
+        <p>GCCI has visited the following countries with purpose.</p>
+      </div>
 
-        <div class="d-flex justify-content-center">
-            <img src="{% static 'assets/images/img_locations.jpeg' %}" alt="Locations Image" class="map" />
-        </div>
+      <div class="d-flex justify-content-center">
+        <img src="{% static 'assets/images/img_locations.jpeg' %}" alt="Locations Image" class="map" />
+      </div>
 
-        <!--<a class="btn fillBtn" href="">See More</a>-->
+      <!--<a class="btn fillBtn" href="">See More</a>-->
     </div>
 
     <!-- Global Offices -->
@@ -123,93 +123,64 @@
     </div>-->
 
     <div class="container-fluid pb-0 mb-0 justify-content-center footer">
-     <footer>
-         <div class="row my-5 justify-content-center">
-             <div class="col-11">
-                 <div class="row ">
-                     <div class="col-xl-6 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
-                        <img style="width: 400px; height: 300px;"
-                            src="{% static 'assets/images/GCCI Logo.png' %}"
-                            alt="GCCI Web Site" />
-                     </div>
-                     <div class="col-xl-3 col-md-4 col-sm-4 col-12">
-                         <h5 class="mb-3 mb-lg-4"><b>MENU</b></h5>
-                         <ul class="list-unstyled">
-                             <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false"
-                                       style="color: white;" data-width="20px" data-height="20px"></span>
-                                 <a href="{% url 'home' %}">Home</a></li>
-                             <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false"
-                                       style="color: white;" data-width="20px" data-height="20px"></span>
-                                 <a href="{% url 'news' %}">News</a></li>
-                             <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false"
-                                       style="color: white;" data-width="20px" data-height="20px"></span>
-                                 <a href="{% url 'services' %}">Services</a></li>
-                             <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false"
-                                       style="color: white;" data-width="20px" data-height="20px"></span>
-                                 <a href="{% url 'manufacturing' %}">Manufacturing</a></li>
-                             <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false"
-                                       style="color: white;" data-width="20px" data-height="20px"></span>
-                                 <a href="{% url 'achievements' %}">Our Achievements</a></li>
-                             <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false"
-                                       style="color: white;" data-width="20px" data-height="20px"></span>
-                                 <a href="{% url 'AboutGCCI' %}">About Us</a></li>
-                             <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false"
-                                       style="color: white;" data-width="20px" data-height="20px"></span>
-                                 <a href="{% url 'Testimonials' %}">Testimonials</a></li>
-                             <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false"
-                                       style="color: white;" data-width="20px" data-height="20px"></span>
-                                 <a href="{% url 'Education' %}">CSR</a></li>
-                         </ul>
-                     </div>
-                     <div class="col-xl-3 col-md-4 col-sm-4 col-12">
-                         <h5 class="mb-3 mb-lg-4 mt-sm-0 mt-5"><b>ADDRESS</b></h5>
-                         <p>
-                             <span class="iconify" data-icon="mdi:map-marker-radius-outline" data-inline="false"
-                                   style="color: white;" data-width="20px" data-height="20px"></span>
-                             <b>Reg. Office: </b>Block – G11, Flat 403, Gangadham  Phsae II, Market Yard,
-                             Pune - 411 037, MH, India.<br/>
-                             <span class="iconify" data-icon="mdi:map-marker-radius-outline" data-inline="false"
-                                   style="color: white;" data-width="20px" data-height="20px"></span>
-                             <b>Governing Office: </b>Shop No. LG-K-02, S. No.  588/2B, Raviraj Cru Premises, Bibwewadi,
-                             Market  Yard, Pune, MH, India.
-                        </p>
-                     </div>
-                 </div>
-                 <div class="row">
-                     <div class="col-xl-6 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
-                         <p class="mb-0 pb-0">
-                             <span class="iconify" data-icon="mdi:facebook" data-inline="false" style="color: white;"
-                                   data-width="40px" data-height="40px"></span>
-                             <span class="iconify" data-icon="mdi:linkedin" data-inline="false" style="color: white;"
-                                   data-width="40px" data-height="40px"></span>
-                             <span class="iconify" data-icon="mdi:twitter" data-inline="false" style="color: white;"
-                                   data-width="40px" data-height="40px"></span>
-                             <span class="iconify" data-icon="mdi:instagram" data-inline="false" style="color: white;"
-                                   data-width="40px" data-height="40px"></span>
-                         </p>
-                         <small class="text-muted rights"><span>&#174;</span> GCCI All Rights Reserved.</small>
-                     </div>
-                     <div class="col-xl-3 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
-                         <h5><b>CONTACT US</b></h5>
-                         <small>
-                             <span class="iconify" data-icon="mdi:phone-classic" data-inline="false" style="color: white;"
-                                   data-width="20px" data-height="20px"></span> 9284776019<br/>
-                             <span class="iconify" data-icon="mdi:phone-classic" data-inline="false" style="color: white;"
-                                   data-width="20px" data-height="20px"></span> +91-9960037372
-                         </small>
-                     </div>
-                     <div class="col-xl-3 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
-                         <h5 class="mt-2"><b>YUVRAJ SITHAIYAN</b></h5>
-                         <small>
-                         <span class="iconify" data-icon="mdi:email-edit-outline" data-inline="false" style="color: white;"
-                               data-width="20px" data-height="20px"></span> yuvaraj.s@gcc-india.com <br/>
-                         <span class="iconify" data-icon="mdi:email-edit-outline" data-inline="false" style="color: white;"
-                               data-width="20px" data-height="20px"></span> admin@gcc-india.com
-                         </small>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </footer>
+      <footer>
+        <div class="row my-5 justify-content-center">
+          <div class="col-11">
+            <div class="row">
+              <div class="col-xl-6 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                <img style="width: 400px; height: 300px" src="{% static 'assets/images/GCCI Logo.png' %}" alt="GCCI Web Site" />
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                <h5 class="mb-3 mb-lg-4"><b>MENU</b></h5>
+                <ul class="list-unstyled">
+                  <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> <a href="{% url 'home' %}">Home</a></li>
+                  <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> <a href="{% url 'news' %}">News</a></li>
+                  <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> <a href="{% url 'services' %}">Services</a></li>
+                  <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> <a href="{% url 'manufacturing' %}">Manufacturing</a></li>
+                  <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> <a href="{% url 'achievements' %}">Our Achievements</a></li>
+                  <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> <a href="{% url 'AboutGCCI' %}">About Us</a></li>
+                  <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> <a href="{% url 'Testimonials' %}">Testimonials</a></li>
+                  <li><span class="iconify" data-icon="mdi:link-variant" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> <a href="{% url 'Education' %}">CSR</a></li>
+                </ul>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                <h5 class="mb-3 mb-lg-4 mt-sm-0 mt-5"><b>ADDRESS</b></h5>
+                <p>
+                  <span class="iconify" data-icon="mdi:map-marker-radius-outline" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span>
+                  <b>Reg. Office: </b>Block – G11, Flat 403, Gangadham Phsae II, Market Yard, Pune - 411 037, MH, India.<br />
+                  <span class="iconify" data-icon="mdi:map-marker-radius-outline" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span>
+                  <b>Governing Office: </b>Shop No. LG-K-02, S. No. 588/2B, Raviraj Cru Premises, Bibwewadi, Market Yard, Pune, MH, India.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                <p class="mb-0 pb-0">
+                  <span class="iconify" data-icon="mdi:facebook" data-inline="false" style="color: white" data-width="40px" data-height="40px"></span>
+                  <span class="iconify" data-icon="mdi:linkedin" data-inline="false" style="color: white" data-width="40px" data-height="40px"></span>
+                  <span class="iconify" data-icon="mdi:twitter" data-inline="false" style="color: white" data-width="40px" data-height="40px"></span>
+                  <span class="iconify" data-icon="mdi:instagram" data-inline="false" style="color: white" data-width="40px" data-height="40px"></span>
+                </p>
+                <small class="text-muted rights"><span>&#174;</span> GCCI All Rights Reserved.</small>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3">
+                <h5><b>CONTACT US</b></h5>
+                <small>
+                  <span class="iconify" data-icon="mdi:phone-classic" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> 9284776019<br />
+                  <span class="iconify" data-icon="mdi:phone-classic" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> +91-9960037372
+                </small>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-4 col-auto order-1 align-self-end">
+                <h5 class="mt-2"><b>YUVRAJ SITHAIYAN</b></h5>
+                <small>
+                  <span class="iconify" data-icon="mdi:email-edit-outline" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> yuvaraj.s@gcc-india.com <br />
+                  <span class="iconify" data-icon="mdi:email-edit-outline" data-inline="false" style="color: white" data-width="20px" data-height="20px"></span> admin@gcc-india.com
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
+</html>

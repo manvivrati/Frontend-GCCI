@@ -1,235 +1,238 @@
 {% extends 'Navbar.html' %}{% load static %}{% block landing %}
 
 <main>
-    <!-- Top Carousel -->
-    <div class="mt-4 pt-5">
-        <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom: 20px;">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="{% static 'assets/images/Banner 2.jpg' %}"
-                         alt="Banner Image 2" class="responsive" />
-                </div>
-                <div class="mainVisual_text" >
-                    <p>TESTIMONIALS</p>
-                </div>
-            </div>
+  <!-- Top Carousel -->
+  <div class="mt-4 pt-5">
+    <div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel" style="margin-bottom: 20px">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src="{% static 'assets/images/Banner 2.jpg' %}" alt="Banner Image 2" class="responsive" />
         </div>
+        <div class="mainVisual_text">
+          <p>TESTIMONIALS</p>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="container-fluid px-0 overflow-hidden">
-
+  <div class="container-fluid px-0 overflow-hidden">
     <!-- Client speaks -->
     <div class="container-fluid">
-        <br />
-        <h3 class="heading">Client Speaks</h3>
+      <br />
+      <h3 class="heading">Client Speaks</h3>
 
-        <div class="gtco-testimonials" id="testimonials">
-            <h2>Testimonials Carousel - Cards Comments</h2>
-            <div class="owl-carousel owl-carousel1">
-                <div>
-                  <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
-                    <div class="card-body">
-                      <h5>Ronne Galle <br />
-                        <span> Project Manager </span>
-                      </h5>
-                      <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                        impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
-                    <div class="card-body">
-                      <h5>Missy Limana<br />
-                        <span> Engineer </span>
-                      </h5>
-                      <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                        impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
-                    <div class="card-body">
-                      <h5>Martha Brown<br />
-                        <span> Project Manager </span>
-                      </h5>
-                      <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                        impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-              <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="">
-                <div class="card-body">
-                  <h5>Hanna Lisem<br />
-                    <span> Project Manager </span>
-                  </h5>
-                  <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                    impedit quo minus id quod maxime placeat ” </p>
-                </div>
+      <div class="gtco-testimonials">
+        <h2>Testimonials Carousel - Cards Comments</h2>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card text-center">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="" />
+              <div class="card-body">
+                <h5>
+                  Ronne Galle <br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ”</p>
               </div>
             </div>
+          </div>
+          <div class="item">
+            <div class="card text-center">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="" />
+              <div class="card-body">
+                <h5>
+                  Missy Limana<br />
+                  <span> Engineer </span>
+                </h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ”</p>
+              </div>
             </div>
+          </div>
+          <div class="item">
+            <div class="card text-center">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="" />
+              <div class="card-body">
+                <h5>
+                  Martha Brown<br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ”</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card text-center">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="" />
+              <div class="card-body">
+                <h5>
+                  Hanna Lisem<br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ”</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="text-right">
-            <a data-toggle="modal" data-target="#client">
-            <span class="iconify" data-icon="mdi:plus-circle-outline" data-inline="false" style="color: #15aad5;"
-                  data-width="40" data-height="40"></span></a>
-        </div>
-        <br />
       </div>
+
+      <div class="text-right">
+        <a data-toggle="modal" data-target="#client"> <span class="iconify" data-icon="mdi:plus-circle-outline" data-inline="false" style="color: #15aad5" data-width="40" data-height="40"></span></a>
+      </div>
+      <br />
+    </div>
 
     <!-- Organisation speaks -->
     <div class="container-fluid">
-        <br />
-        <h3 class="heading">Organisations Speak</h3>
+      <br />
+      <h3 class="heading">Organisations Speak</h3>
 
-        <div class="gtco-testimonials">
-            <h2>Testimonials Carousel - Cards Comments</h2>
-            <div class="owl-carousel owl-carousel1">
-                <div>
-                  <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
-                    <div class="card-body">
-                      <h5>Ronne Galle <br />
-                        <span> Project Manager </span>
-                      </h5>
-                      <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                        impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
-                    <div class="card-body">
-                      <h5>Missy Limana<br />
-                        <span> Engineer </span>
-                      </h5>
-                      <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                        impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
-                    <div class="card-body">
-                      <h5>Martha Brown<br />
-                        <span> Project Manager </span>
-                      </h5>
-                      <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                        impedit quo minus id quod maxime placeat ” </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-              <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="">
-                <div class="card-body">
-                  <h5>Hanna Lisem<br />
-                    <span> Project Manager </span>
-                  </h5>
-                  <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                    impedit quo minus id quod maxime placeat ” </p>
-                </div>
+      <div class="gtco-testimonials">
+        <h2>Testimonials Carousel - Cards Comments</h2>
+        <div class="owl-carousel owl-carousel1">
+          <div>
+            <div class="card text-center">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="" />
+              <div class="card-body">
+                <h5>
+                  Ronne Galle <br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ”</p>
               </div>
             </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="" />
+              <div class="card-body">
+                <h5>
+                  Missy Limana<br />
+                  <span> Engineer </span>
+                </h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ”</p>
+              </div>
             </div>
-        </div>
-
-        <div class="text-right">
-            <a data-toggle="modal" data-target="#organisation">
-            <span class="iconify" data-icon="mdi:plus-circle-outline" data-inline="false" style="color: #15aad5;"
-                  data-width="40" data-height="40"></span></a>
-        </div>
-        <br />
-    </div>
-    </div>
-
-    <!-- Modal for client -->
-    <div class="modal fade bs-example-modal-center" id="client" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h6 class="modal-title mt-0">SHARE YOUR TESTIMONIALS HERE</h6>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" >
-                <form method="post">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <div class="gcci--image--card">
-                            <div class="gcci--profile--images">
-                              <img src="{% static 'assets/images/profile.png' %}" alt="image not available" id="upload-img" name="upload-img" />
-                            </div>
-                            <div class="custom-file gcci--custom--file">
-                              <label for="fileupload">Upload Profile</label>
-                              <input class="btn button" type="file" id="fileupload" name="photo" accept="image/.png,.jpg" />
-                            </div>
-                          </div>
-                          <br />
-                          <script src="{% static 'js/mainjs.js' %}"></script>
-
-                        <input required class="form-control" name="name" placeholder="Enter Your Name"><br/>
-                        <input required class="form-control" name="designation" placeholder="Enter Your Designation"><br/>
-                        <input required class="form-control" name="companyname" placeholder="Enter Your Company Name"><br/>
-                        <textarea class="form-control" rows="5" name="reason" placeholder="Enter Your Review" required></textarea>
-                    </div>
-                    <input type="hidden" name="pk">
-                    <div class="form-group">
-                        <center>
-                            <button type="submit" name="submit" class="btn modalbtn">SUBMIT</button>
-                            <p><br/>Any content for client can be placed here</p>
-                        </center>
-                    </div>
-                </form>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="" />
+              <div class="card-body">
+                <h5>
+                  Martha Brown<br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ”</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="" />
+              <div class="card-body">
+                <h5>
+                  Hanna Lisem<br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ”</p>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-    </div>
+      </div>
 
-    <!-- Modal for organisation -->
-    <div class="modal fade bs-example-modal-center" id="organisation" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h6 class="modal-title mt-0">SHARE YOUR TESTIMONIALS HERE</h6>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" >
-                <form method="post">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <input required class="form-control" name="name" placeholder="Enter Your Name"><br/>
-                        <input required class="form-control" name="designation" placeholder="Enter Your Designation"><br/>
-                        <input required class="form-control" name="companyname" placeholder="Enter Your Company Name"><br/>
-                        <textarea class="form-control" rows="5" name="reason" placeholder="Enter Your Review" required></textarea>
-                    </div>
-                    <input type="hidden" name="pk">
-                    <div class="form-group">
-                        <center>
-                            <button type="submit" name="submit" class="btn modalbtn">SUBMIT</button>
-                            <p><br/>Any content can be placed here</p>
-                        </center>
-                    </div>
-                </form>
-          </div>
-        </div>
-        </div>
+      <div class="text-right">
+        <a data-toggle="modal" data-target="#organisation"> <span class="iconify" data-icon="mdi:plus-circle-outline" data-inline="false" style="color: #15aad5" data-width="40" data-height="40"></span></a>
+      </div>
+      <br />
     </div>
+  </div>
+
+  <!-- Modal for client -->
+  <div class="modal fade bs-example-modal-center" id="client" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title mt-0">SHARE YOUR TESTIMONIALS HERE</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <div class="gcci--image--card">
+                <div class="gcci--profile--images">
+                  <img src="{% static 'assets/images/profile.png' %}" alt="image not available" id="upload-img" name="upload-img" />
+                </div>
+                <div class="custom-file gcci--custom--file">
+                  <label for="fileupload">Upload Profile</label>
+                  <input class="btn button" type="file" id="fileupload" name="photo" accept="image/.png,.jpg" />
+                </div>
+              </div>
+              <br />
+              <script src="{% static 'js/mainjs.js' %}"></script>
+
+              <input required class="form-control" name="name" placeholder="Enter Your Name" /><br />
+              <input required class="form-control" name="designation" placeholder="Enter Your Designation" /><br />
+              <input required class="form-control" name="companyname" placeholder="Enter Your Company Name" /><br />
+              <textarea class="form-control" rows="5" name="reason" placeholder="Enter Your Review" required></textarea>
+            </div>
+            <input type="hidden" name="pk" />
+            <div class="form-group">
+              <center>
+                <button type="submit" name="submit" class="btn modalbtn">SUBMIT</button>
+                <p><br />Any content for client can be placed here</p>
+              </center>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for organisation -->
+  <div class="modal fade bs-example-modal-center" id="organisation" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title mt-0">SHARE YOUR TESTIMONIALS HERE</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <input required class="form-control" name="name" placeholder="Enter Your Name" /><br />
+              <input required class="form-control" name="designation" placeholder="Enter Your Designation" /><br />
+              <input required class="form-control" name="companyname" placeholder="Enter Your Company Name" /><br />
+              <textarea class="form-control" rows="5" name="reason" placeholder="Enter Your Review" required></textarea>
+            </div>
+            <input type="hidden" name="pk" />
+            <div class="form-group">
+              <center>
+                <button type="submit" name="submit" class="btn modalbtn">SUBMIT</button>
+                <p><br />Any content can be placed here</p>
+              </center>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 <script>
- $(document).ready(function(){
-    $("#testimonials").owlCarousel({
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
       loop: true,
       center: true,
       margin: 0,
       autoplay: true,
-	  dots:true,
+      dots: true,
       autoplayTimeout: 8500,
       smartSpeed: 450,
       responsiveClass: true,
@@ -237,19 +240,20 @@
       responsive: {
         0: {
           items: 1,
-          nav: false
+          nav: false,
         },
         680: {
           items: 2,
           nav: false,
-          loop: false
+          loop: false,
         },
         1000: {
           items: 3,
-          nav: true
-        }
-      }
+          nav: true,
+        },
+      },
     });
-});
- </script>
+  });
+</script>
+
 {% endblock landing %}
