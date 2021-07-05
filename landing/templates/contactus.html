@@ -1,3 +1,4 @@
+{% extends 'Navbar.html' %}{% load static %}{% block landing %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -38,29 +39,28 @@
 
 <body>
     <div class="container-fluid px-0 overflow-hidden">
-
     <div class="container-fluid px-0 overflow-hidden contact_bg">
-        <h4 style="padding-left: 20px;">CONTACT US</h4>
+        <h4 style="padding-left: 20px; margin-top: 100px;" class="text-center">CONTACT US</h4>
     </div>
 
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" class="mx-auto col-xs-12 col-sm-12 col-md-10" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="container-fluid contact_content">
 
         <div class="form-group">
             <div><label class="contact_head">Name:</label></div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <select required class="form-control">
                         <option hidden selected>Salutation</option>
                         <option >Mr.</option>
                         <option >Mrs.</option>
                     </select>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <input required class="form-control" placeholder="First Name" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <input required class="form-control" placeholder="Last Name" />
                 </div>
             </div>
@@ -209,3 +209,4 @@
         </div>
     </div>
 </body>
+{% endblock %}
