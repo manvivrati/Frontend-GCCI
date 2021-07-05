@@ -1,0 +1,81 @@
+{% extends 'admin_dashboard.html' %}
+{% block admin_content %}
+
+
+	<div class="card col-6 mx-auto mt-4">
+	<div class="card-body">
+		<form method="post">
+			{% csrf_token %}
+		<div class="form-group">
+			<label to="title"> Enter the Title of the Event </label>
+			<input 
+			class="form-control" 
+			type="text"
+			 name="title" 
+			 id="title"
+			 placeholder="Title"
+			 required>
+		</div>
+
+
+
+		<div class="form-group">
+			<label to="title"> Enter the Details of the Event </label>
+			<textarea
+			class="form-control" 
+			name="details" 
+			id="details"
+			placeholder="Description"
+			required>
+		</textarea>
+		</div>
+
+
+		<div class="form-group">
+			<label to="title"> Enter the Date of the Event </label>
+			<input
+			class="form-control" 
+			type="date"
+			name="date" 
+			id="date"
+			placeholder="Select the Date"
+			required>
+		</div>
+
+
+		<div class="form-group">
+			<label to="title"> Enter the Link of the Event </label>
+			<input
+			class="form-control" 
+			type="url"
+			name="link" 
+			id="link"
+			placeholder="Link">
+		</div>
+
+		<div class="form-group">
+			<label to="title"> Upload Event Images Here </label>
+			<input
+			class="form-control" 
+			type="file"
+			name="images" 
+			id="images"
+			placeholder="Upload">
+		</div>
+
+		<div class="form-group">
+			<input
+			class="form-control btn-primary" 
+			type="submit"
+			name="submit" 
+			id="submit"
+			value="Add Event">
+		</div>
+		</div>
+	</form>
+</div>
+</div>
+
+
+
+{% endblock %}

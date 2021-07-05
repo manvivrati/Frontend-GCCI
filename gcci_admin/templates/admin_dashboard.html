@@ -10,6 +10,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 
     <body>
@@ -20,35 +22,40 @@
         <ul class="sidebar-navigation">
         <br>
         <li>
-            <a href="#">
-                <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard
+            <a href="{% url 'summary' %}">
+                <span class="iconify" data-icon="ci:dashboard" data-inline="false" data-width="22px" data-height="22px"></span> Dashboard
             </a>
         </li>
         <li class="header">Blogs & News</li>
         <li>
-            <a href="#">
-                <i class="fa fa-users" aria-hidden="true"></i> Add Blogs
+            <a href="{% url 'add_blogs' %}">
+                <span class="iconify" data-icon="dashicons:welcome-write-blog" data-inline="false" data-width="22px" data-height="22px"></span> Add Blogs
             </a>
         </li>
         <li>
-            <a href="#">
-                <i class="fa fa-cog" aria-hidden="true"></i> Manage Blogs
+            <a href="{% url 'manage_blogs' %}">
+                <span class="iconify" data-icon="fluent:notepad-edit-20-regular" data-inline="false" data-width="22px" data-height="22px"></span> Manage Blogs
             </a>
         </li>
         <li>
-            <a href="#">
-                <i class="fa fa-info-circle" aria-hidden="true"></i> Add News
+            <a href="{% url 'add_news' %}">
+                <span class="iconify" data-icon="icon-park-outline:newspaper-folding" data-inline="false" data-width="18px" data-height="18px"></span> Add News
             </a>
         </li>
         <li>
-            <a href="#">
-                <i class="fa fa-info-circle" aria-hidden="true"></i> Manage News
+            <a href="{% url 'manage_news' %}">
+                <span class="iconify" data-icon="eos-icons:cluster-management-outlined" data-inline="false" data-width="18px" data-height="18px"></span> Manage News
             </a>
         </li>
         <li class="header">Social Works & Events</li>
         <li>
-            <a href="#">
-                <i class="fa fa-info-circle" aria-hidden="true"></i> Add Events
+            <a href="{% url 'add_events' %}">
+               <span class="iconify" data-icon="bx:bxs-calendar-event" data-inline="false" data-width="18px" data-height="18px"></span> Add Events
+            </a>
+        </li>
+         <li>
+            <a href="{% url 'manage_events' %}">
+                <span class="iconify" data-icon="eos-icons:content-lifecycle-management" data-inline="false" data-width="18px" data-height="18px"></span> Manage Events
             </a>
         </li>
         <li>
@@ -56,11 +63,7 @@
                 <i class="fa fa-info-circle" aria-hidden="true"></i> Social Work
             </a>
         </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-info-circle" aria-hidden="true"></i> Manage Events
-            </a>
-        </li>
+       
         <li class="header">Manufacturing</li>
         <li>
             <a href="#">
@@ -72,8 +75,16 @@
                 <i class="fa fa-info-circle" aria-hidden="true"></i> Manage Products
             </a>
         </li>
+         <li>
+            <a href="#">
+                <span class="iconify" data-icon="ri:logout-circle-fill" data-inline="false" data-width="18px" data-height="18px"></span> Logout
+            </a>
+        </li>
     </ul>
     </div>
+
+
+    <div class="content-container">{% block admin_content %} {% endblock %} </div>
 
 </body>
 

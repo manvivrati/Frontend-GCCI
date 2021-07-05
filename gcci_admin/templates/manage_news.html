@@ -1,0 +1,158 @@
+{% extends 'admin_dashboard.html' %}
+{% block admin_content %}
+
+
+	<div class="card col-11 mx-auto mt-4">
+    <div class="card-body">
+	<table class="table table-striped">
+  <thead class="bg-primary text-white">
+    <tr>
+      <th scope="col">Sl. No.</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">News Date</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
+      <td>@mdo</td>
+      <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
+      <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Mark</td>
+      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
+      <td>@mdo</td>
+   
+      <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
+      <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mark</td>
+      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
+      <td>@mdo</td>
+  
+      <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
+      <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
+    </tr>
+  </tbody>
+</table>
+
+{# Modal for Event Description #}
+
+  <div class="modal fade bs-example-modal-center" id="description" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h6 class="modal-title mt-0 text-center">NEWS DESCRIPTION</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+			<label to="title">Title of the News </label>
+			<input 
+			class="form-control" 
+			type="text"
+			 name="title" 
+			 id="title"
+			 placeholder="Title"
+			 required>
+		</div>
+		<div class="form-group">
+			<label to="title">Description of the News </label>
+			<textarea
+			class="form-control" 
+			name="details" 
+			id="details"
+			placeholder="Description"
+			required>
+		</textarea>
+		</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  {# Modal for Edit Events #}
+
+  <div class="modal fade bs-example-modal-center" id="edit" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h6 class="modal-title mt-0 text-center">EDIT NEWS</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post">
+			{% csrf_token %}
+		<div class="form-group">
+			<label to="title"> Enter the Title of the Event </label>
+			<input 
+			class="form-control" 
+			type="text"
+			 name="title" 
+			 id="title"
+			 placeholder="Title"
+			 required>
+		</div>
+
+
+
+		<div class="form-group">
+			<label to="title"> Enter the Details of the Event </label>
+			<textarea
+			class="form-control" 
+			name="details" 
+			id="details"
+			placeholder="Description"
+			required>
+		</textarea>
+		</div>
+
+
+
+		<div class="form-group">
+			<label to="title"> Upload Event Images Here </label>
+			<input
+			class="form-control" 
+			type="file"
+			name="images" 
+			id="images"
+			placeholder="Upload">
+		</div>
+
+		<div class="form-group">
+			<input
+			class="form-control btn-primary" 
+			type="submit"
+			name="submit" 
+			id="submit"
+			value="Save">
+		</div>
+		</div>
+	</form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	</div>
+</div>
+
+{% endblock %}

@@ -160,7 +160,7 @@
         </div>
         <div class="modal-body">
           <form method="post">
-            {% csrf_token %}
+            {% csrf_token %} 
             <div class="form-group">
               <div class="gcci--image--card">
                 <div class="gcci--profile--images">
@@ -177,7 +177,7 @@
               <input required class="form-control" name="name" placeholder="Enter Your Name" /><br />
               <input required class="form-control" name="designation" placeholder="Enter Your Designation" /><br />
               <input required class="form-control" name="companyname" placeholder="Enter Your Company Name" /><br />
-              <textarea class="form-control" rows="5" name="reason" placeholder="Enter Your Review" required></textarea>
+              <textarea class="form-control" rows="3" name="review" placeholder="Enter Your Review" required></textarea>
             </div>
             <input type="hidden" name="pk" />
             <div class="form-group">
@@ -206,10 +206,21 @@
           <form method="post">
             {% csrf_token %}
             <div class="form-group">
+               <div class="gcci--image--card">
+                <div class="gcci--profile--images">
+                  <img src="{% static 'assets/images/profile.png' %}" alt="image not available" id="upload-img" name="upload-img" />
+                </div>
+                <div class="custom-file gcci--custom--file">
+                  <label for="fileupload">Upload Profile</label>
+                  <input class="btn button" type="file" id="fileupload" name="photo" accept="image/.png,.jpg" />
+                </div>
+              </div>
+              <br />
+              <script src="{% static 'js/mainjs.js' %}"></script>
               <input required class="form-control" name="name" placeholder="Enter Your Name" /><br />
               <input required class="form-control" name="designation" placeholder="Enter Your Designation" /><br />
               <input required class="form-control" name="companyname" placeholder="Enter Your Company Name" /><br />
-              <textarea class="form-control" rows="5" name="reason" placeholder="Enter Your Review" required></textarea>
+              <textarea class="form-control" rows="3" name="reason" placeholder="Enter Your Review" required></textarea>
             </div>
             <input type="hidden" name="pk" />
             <div class="form-group">
