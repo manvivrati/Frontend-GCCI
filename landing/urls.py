@@ -5,7 +5,6 @@ urlpatterns = [
 
 path('', home, name="home"),
 path('Services/', services, name="services"),
-path('Contact_us/', contact_us, name="contact_us"),
 path('Services/Lean_Manufacturing', lean_manufacturing, name="lean_manufacturing"),
 path('Services/Smart_Factory_IoT', smart_factory, name="smart_factory"),
 path('Services/TPM', tpm, name="tpm"),

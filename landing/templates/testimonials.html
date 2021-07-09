@@ -159,7 +159,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post">
+          <form method="post" enctype="multipart/form-data">
             {% csrf_token %} 
             <div class="form-group">
               <div class="gcci--image--card">
@@ -171,7 +171,6 @@
                   <input class="btn button" type="file" id="fileupload" name="photo" accept="image/.png,.jpg" />
                 </div>
               </div>
-              <br />
               <script src="{% static 'js/mainjs.js' %}"></script>
 
               <input required class="form-control" name="name" placeholder="Enter Your Name" /><br />
@@ -181,10 +180,9 @@
             </div>
             <input type="hidden" name="pk" />
             <div class="form-group">
-              <center>
-                <button type="submit" name="submit" class="btn modalbtn">SUBMIT</button>
-                <p><br />Any content for client can be placed here</p>
-              </center>
+        
+                <button class="btn-primary btn-block" type="submit" name="submit" class="btn modalbtn" value="client">SUBMIT</button>
+            
             </div>
           </form>
         </div>
@@ -203,7 +201,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post">
+          <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="form-group">
                <div class="gcci--image--card">
@@ -220,14 +218,11 @@
               <input required class="form-control" name="name" placeholder="Enter Your Name" /><br />
               <input required class="form-control" name="designation" placeholder="Enter Your Designation" /><br />
               <input required class="form-control" name="companyname" placeholder="Enter Your Company Name" /><br />
-              <textarea class="form-control" rows="3" name="reason" placeholder="Enter Your Review" required></textarea>
+              <textarea class="form-control" rows="3" name="review" placeholder="Enter Your Review" required></textarea>
             </div>
             <input type="hidden" name="pk" />
             <div class="form-group">
-              <center>
-                <button type="submit" name="submit" class="btn modalbtn">SUBMIT</button>
-                <p><br />Any content can be placed here</p>
-              </center>
+                <button class="btn-primary btn-block" value="organization" type="submit" name="submit" class="btn modalbtn">SUBMIT</button>
             </div>
           </form>
         </div>

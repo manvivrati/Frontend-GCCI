@@ -1,6 +1,10 @@
 {% extends 'admin_dashboard.html' %}
 {% block admin_content %}
 
+<div class="form-group col-6 ml-5 mt-5">
+      <label for="filter">Type Name Here to Search</label>
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+</div>
 	
 
 	<div class="card col-11 mx-auto mt-4">
@@ -12,6 +16,7 @@
       <th scope="col">Title</th>
       <th scope="col">Description</th>
       <th scope="col">Event Date</th>
+      <th span="col"> Images </th>
       <th scope="col">Date of Creation</th>
       <th scope="col">Event Link</th>
       <th scope="col">Edit</th>
@@ -19,38 +24,40 @@
     </tr>
   </thead>
   <tbody>
+
+
+
+    {% for event in data %}
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
-      <td>@mdo</td>
-      <td>Mark</td>
-      <td>Otto</td>
+      <th scope="row">{{ event.id }}</th>
+      <td>{{ event.title }}</td>
+      <td> <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
+      <td>{{ event.event_date }}</td>
+      <td> <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
+      <td>{{ event.created_date }}</td>
+      <td>{{ event.link }}</td>
       <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
       <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Mark</td>
-      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
-      <td>@mdo</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
-      <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Mark</td>
-      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
-      <td>@mdo</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
-      <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
-    </tr>
+    {% endfor %}
+
+
+
+
   </tbody>
 </table>
+
+ <ul class="pagination justify-content-end">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
 
 {# Modal for Event Description #}
 

@@ -1,7 +1,9 @@
-from django.db import models 
+from django.db import models  
 
 # Create your models here.
 class Contact(models.Model):
+	salutation_choice = (('Mr','Mr'),('Mrs','Mrs'))
+	salutation = models.CharField(max_length=100,choices=salutation_choice,default="None")
 	first_name = models.CharField(max_length=100,help_text="Enter Your First Name")
 	middle_name = models.CharField(max_length=100,help_text="Enter Your Middle Name")
 	last_name = models.CharField(max_length=100,help_text="Enter Your Last Name")

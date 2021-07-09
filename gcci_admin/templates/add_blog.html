@@ -2,9 +2,9 @@
 {% block admin_content %}
 
 
-	<div class="card col-6 mx-auto mt-4">
+	<div class="card col-10 mx-auto mt-4">
 	<div class="card-body">
-		<form method="post">
+		<form method="post" enctype="multipart/form-data">
 			{% csrf_token %}
 		<div class="form-group">
 			<label to="title"> Enter the Title of the Blog </label>
@@ -21,25 +21,20 @@
 
 		<div class="form-group">
 			<label to="title"> Enter the Details of the Blog </label>
-			<textarea
-			class="form-control" 
-			name="details" 
-			id="details"
-			placeholder="Description"
-			required>
-		</textarea>
+			<textarea class="form-control"  name="details" id="summernote" placeholder="Enter Your Review" required></textarea>
 		</div>
 
 
 
 
+
 		<div class="form-group">
-			<label to="title"> Upload Videos</label>
+			<label to="title"> Upload Images of the Blog</label>
 			<input
 			class="form-control" 
 			type="file"
-			name="images" 
-			id="images"
+			name="videos" 
+			id="videos"
 			placeholder="Upload">
 		</div>
 
@@ -66,6 +61,25 @@
 	</form>
 </div>
 </div>
+
+<script>
+$(document).ready(function() {
+  $('#summernote').summernote();
+});
+</script>
+
+
+{% if success %}
+<script>
+	swal("Success", "Blog Added Successfully", "success");
+</script>
+{% endif %}
+
+{% if failed %}
+<script>
+	swal("Failed", "Blog Addition Failed", "error");
+</script>
+{% endif %}
 
 
 

@@ -2,7 +2,7 @@
 {% block admin_content %}
 
 
-	<div class="card col-6 mx-auto mt-4">
+	<div class="card col-10 mx-auto mt-4">
 	<div class="card-body">
 		<form method="post">
 			{% csrf_token %}
@@ -20,14 +20,8 @@
 
 
 		<div class="form-group">
-			<label to="title"> Enter the Details of the Event </label>
-			<textarea
-			class="form-control" 
-			name="details" 
-			id="details"
-			placeholder="Description"
-			required>
-		</textarea>
+			<label to="title"> Enter the Details of the Blog </label>
+			<textarea class="form-control" rows="3" name="details" id="summernote"placeholder="Enter Your Review" required></textarea>
 		</div>
 
 
@@ -35,7 +29,7 @@
 			<label to="title"> Enter the Date of the Event </label>
 			<input
 			class="form-control" 
-			type="date"
+			type="datetime-local"
 			name="date" 
 			id="date"
 			placeholder="Select the Date"
@@ -47,7 +41,7 @@
 			<label to="title"> Enter the Link of the Event </label>
 			<input
 			class="form-control" 
-			type="url"
+			type="text"
 			name="link" 
 			id="link"
 			placeholder="Link">
@@ -76,6 +70,24 @@
 </div>
 </div>
 
+
+<script>
+$(document).ready(function() {
+  $('#summernote').summernote();
+});
+</script>
+
+{% if success %}
+<script>
+	swal("Success", "Event Added Successfully", "success");
+</script>
+{% endif %}
+
+{% if failed %}
+<script>
+	swal("Failed", "Event Addition Failed", "error");
+</script>
+{% endif %}
 
 
 {% endblock %}

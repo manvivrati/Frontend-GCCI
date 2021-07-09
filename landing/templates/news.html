@@ -40,97 +40,21 @@
         <!-- NewsCards -->
         <div class="container row-lg-10 justify-content-center" style="margin-top: 20px; ">
             <div class="card-group justify-content-md-center">
+
+
+
+                {% for news in data %}
                 <div class="col-md-4 pr-md-1">
                     <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text" style="overflow-y:hidden;">KAIZEN for Business Improvement and Industrial Development in Africa you Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum praesentium ipsam obcaecati eos, atque non, facere laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente assumenda totam itaque mollitia recusandae quidem cumque ipsam asperiores. Quasi dolore, libero autem id harum ab mollitia maiores repellendus a dignissimos, fugiat odio maxime earum hic? Architecto nisi iusto nostrum debitis.  
-                            can see it soon.</p>
+                        <h4 class="card-title">{{news.title}}
+                            <span class="badge badge-pill badge-info">{{ news.created_date|date:'Y-m-d'}}</span></h4>
+                        <p class="card-text" style="overflow-y:hidden;">{{ news.description|safe }}</p>
                         <!-- News Article page linked -->
                         <a href="{% url 'newsfull' %}" class="stretched-link"></a>
                     </div>
                 </div>
-                <div class="col-md-4 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-4 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                {% endfor %}
 
-        <div class="container row-lg-10 justify-content-center" style="margin-top: 20px;">
-            <div class="card-group justify-content-md-center">
-                <div class="col-md-4 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">20 Aug 2020
-                            <span class="badge badge-pill badge-info">NEWS/ Events</span></h4>
-                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
-                            can see it soon.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-4 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-4 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row-lg-10 justify-content-center" style="margin-top: 20px;">
-            <div class="card-group justify-content-md-center">
-                <div class="col-md-4 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">20 Aug 2020
-                            <span class="badge badge-pill badge-info">NEWS/ Events</span></h4>
-                        <p class="card-text">KAIZEN for Business Improvement and Industrial Development in Africa you
-                            can see it soon.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-4 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-md-4 pl-md-1 pr-md-1">
-                    <div class="card newscard">
-                        <h4 class="card-title">17 Sep 2019
-                            <span class="badge badge-pill badge-info">Seminar/ Events</span></h4>
-                        <p class="card-text">Presentation at Maintenance and Resilience Asia on 4th October in Bangkok
-                            Thailand.</p>
-                        <a href="" class="stretched-link"></a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

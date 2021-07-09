@@ -82,9 +82,29 @@
       </div>
 
       <div class="d-flex justify-content-center">
-        <img src="{% static 'assets/images/img_locations.jpeg' %}" alt="Locations Image" class="map" />
-      </div>
+        <!-- <img src="{% static 'assets/images/img_locations.jpeg' %}" alt="Locations Image" class="map" /> -->
+        <img src="{% static 'assets/images/img_locations.jpeg' %}" usemap="#image_map">
+        <map name="image_map">
+          <area alt="Japan" id="japan" onclick="Japan()" title="Japan" href="https://www.google.com/search?q=japan+images&sxsrf=ALeKk00zXRpKn32w1RGcT3Sh3zJZUYOijA:1625568652621&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjooOOQo87xAhWZH7cAHTShCZoQ_AUoAXoECAEQAw&biw=1366&bih=601" coords="968,178,1093,235" shape="rect">
+          <area alt="South Korea" id="suth korea" onmouseover="Korea()" title="South Korea" href="https://www.google.com/search?q=South+Korea+images&tbm=isch&ved=2ahUKEwjYrsSSo87xAhUHDLcAHQgFAXoQ2-cCegQIABAA&oq=South+Korea+images&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyBggAEAcQHjIGCAAQBxAeMgYIABAHEB5Q_X1Y3JYBYL6dAWgAcAB4AIABiwKIAdMVkgEEMi0xMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=kDXkYNimEoeY3LUPiIqE0Ac&bih=601&biw=1366" coords="957,272,1102,306" shape="rect">
+          <area alt="Hong Kong" id="hong kong" onmouseover="HongKong()" title="Hong Kong" href="https://www.google.com/search?q=Hong+Kong+images&tbm=isch&ved=2ahUKEwjr66Sdo87xAhWe0HMBHfLCCHwQ2-cCegQIABAA&oq=Hong+Kong+images&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjoHCAAQsQMQQzoECAAQQ1DemQFY7LIBYLC1AWgBcAB4AIABkwKIAaYSkgEEMi0xMJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=pjXkYOuANJ6hz7sP8oWj4Ac&bih=601&biw=1366" coords="930,312,1060,341" shape="rect">
+        </map>
 
+      </div>
+      <script>
+      function Japan()
+      {
+        alert("Japan");
+      }
+      function Korea()
+      {
+        alert("Korea")
+      }
+      function Hongkong
+      {
+        alert('Hong Kong')
+      }
+    </script>
       <!--<a class="btn fillBtn" href="">See More</a>-->
     </div>
 
@@ -183,5 +203,6 @@
         </div>
       </footer>
     </div>
+
   </body>
 </html>

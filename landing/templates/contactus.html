@@ -50,18 +50,21 @@
         <div class="form-group">
             <div><label class="contact_head">Name:</label></div>
             <div class="row">
-                <div class="col-md-4 mb-3">
-                    <select required class="form-control">
+                <div class="col-md-2 mb-3">
+                    <select name="salutation" required class="form-control">
                         <option hidden selected>Salutation</option>
-                        <option >Mr.</option>
-                        <option >Mrs.</option>
+                        <option value="Mr">Mr.</option>
+                        <option value="Mrs">Mrs.</option>
                     </select>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <input required class="form-control" placeholder="First Name" />
+                <div class="col-md-3 mb-3">
+                    <input name="fname" required class="form-control" placeholder="First Name" />
                 </div>
-                <div class="col-md-4 mb-3">
-                    <input required class="form-control" placeholder="Last Name" />
+                <div class="col-md-3 mb-3">
+                    <input name="mname" class="form-control" placeholder="Middle Name" />
+                </div>
+                <div class="col-md-3 mb-3">
+                    <input name="lname" required class="form-control" placeholder="Last Name" />
                 </div>
             </div>
         </div>
@@ -72,7 +75,7 @@
                     <label class="contact_head">Job Title:</label>
                 </div>
                 <div>
-                    <input required class="form-control" placeholder="Job Title" />
+                    <input name="designation" required class="form-control" placeholder="Job Title" />
                 </div>
             </div>
             <div class="form-group col-md-6">
@@ -80,7 +83,7 @@
                     <label class="contact_head">Company:</label>
                 </div>
                 <div>
-                    <input required class="form-control" placeholder="Company" />
+                    <input name="company" required class="form-control" placeholder="Company" />
                 </div>
             </div>
         </div>
@@ -92,7 +95,7 @@
             </div></div>
             <div class="row">
             <div class="col-md-6">
-                <input required class="form-control" placeholder="Company location" />
+                <input name="company_location" required class="form-control" placeholder="Company location" />
             </div></div>
         </div>
 
@@ -102,7 +105,7 @@
                     <label class="contact_head">Email:</label>
                 </div>
                 <div>
-                    <input required class="form-control" placeholder="Email" />
+                    <input name="email" required class="form-control" placeholder="Email" />
                 </div>
             </div>
             <div class="form-group col-md-6">
@@ -110,7 +113,7 @@
                     <label class="contact_head">Phone:</label>
                 </div>
                 <div>
-                    <input required class="form-control" placeholder="Phone" />
+                    <input name="phone" required class="form-control" placeholder="Phone" />
                 </div>
             </div>
         </div>
@@ -121,9 +124,9 @@
                     <label class="contact_head">Industry:</label>
                 </div>
                 <div>
-                    <select required class="form-control">
+                    <select name="industry_type" required class="form-control">
                         <option hidden selected>Select the Industry</option>
-                        <option>Automotive</option>
+                        <option value="Automotive">Automotive</option>
                     </select>
                 </div>
             </div>
@@ -132,9 +135,9 @@
                     <label class="contact_head">Interested In:</label>
                 </div>
                 <div>
-                    <select required class="form-control">
+                    <select name="interest" required class="form-control">
                         <option hidden selected>Select your Interest</option>
-                        <option>Management System</option>
+                        <option value="Management System">Management System</option>
                     </select>
                 </div>
             </div>
@@ -143,9 +146,9 @@
         <div class="form-group">
             <div><label class="contact_head">Where Did You Hear About Us?</label></div>
             <div>
-                <select required class="form-control">
+                <select name="source" required class="form-control">
                     <option hidden selected>Select from where did you hear about us?</option>
-                    <option>Friends</option>
+                    <option value="Friends">Friends</option>
                 </select>
             </div>
         </div>
@@ -157,7 +160,7 @@
                     let us know for how many delegates you require training?</small></label>
             </div>
             <div>
-                <textarea class="form-control" rows="5"></textarea>
+                <textarea name="enquiry" class="form-control" rows="5"></textarea>
             </div>
         </div>
 
@@ -169,7 +172,7 @@
                 </button>
             </div>
             <div class="col-md-6 text-right">
-                <button class="btn" style="color: #15aad5;" data-toggle="modal" data-target="#submitcontact"><b>SUBMIT </b>
+                <button class="btn" style="color: #15aad5;" type="submit"><b>SUBMIT </b>
                     <span class="iconify" data-icon="fa-solid:paper-plane" data-inline="false" style="color: #15aad5;"
                           data-width="25" data-height="25"></span>
                 </button>
@@ -180,7 +183,7 @@
     </div>
 
     <!-- Modal for organisation -->
-    <div class="modal fade bs-example-modal-center" id="submitcontact" tabindex="-1" role="dialog"
+    <!-- <div class="modal fade bs-example-modal-center" id="submitcontact" tabindex="-1" role="dialog"
          aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -207,6 +210,21 @@
           </div>
         </div>
         </div>
-    </div>
+    </div> -->
+
+
+{% if success %}
+<script>
+    swal("Success", "Enquiry Added Successfully", "success");
+</script>
+{% endif %}
+
+{% if failed %}
+<script>
+    swal("Failed", "Failed", "error");
+</script>
+{% endif %}
+
+
 </body>
 {% endblock %}

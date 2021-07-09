@@ -2,9 +2,9 @@
 {% block admin_content %}
 
 
-	<div class="card col-6 mx-auto mt-4">
+	<div class="card col-10 mx-auto mt-4">
 		<div class="card-body">
-		<form method="post">
+		<form method="post" enctype="multipart/form-data">
 			{% csrf_token %}
 		<div class="form-group">
 			<label to="title"> Enter the Title of the News </label>
@@ -20,13 +20,8 @@
 
 
 		<div class="form-group">
-			<label to="title"> Enter the Details of the News </label>
-			<textarea
-			class="form-control" 
-			name="details" 
-			id="details"
-			required>
-		</textarea>
+			<label to="title"> Enter the Details of the Blog </label>
+			<textarea class="form-control" rows="3" name="details" id="summernote" placeholder="Enter Your Review" required></textarea>
 		</div>
 
 
@@ -59,20 +54,33 @@
 			type="submit"
 			name="submit" 
 			id="submit"
-			value="Add News"
-			onclick = "news_add()">
+			value="Add News">
 		</div>
 		</div>
 	</form>
 </div>
 </div>
 
+
+
 <script>
-	function news_add()
-	{
-		swal("Success", "News Added Successfully", "success");
-	}
+$(document).ready(function() {
+  $('#summernote').summernote();
+});
 </script>
+
+
+{% if success %}
+<script>
+	swal("Success", "News Added Successfully", "success");
+</script>
+{% endif %}
+
+{% if failed %}
+<script>
+	swal("Failed", "News Addition Failed", "error");
+</script>
+{% endif %}
 
 
 {% endblock %}

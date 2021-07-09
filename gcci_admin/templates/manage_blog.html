@@ -1,6 +1,10 @@
 {% extends 'admin_dashboard.html' %}
 {% block admin_content %}
 
+<div class="form-group col-6 ml-5 mt-5">
+      <label for="filter">Type Name Here to Search</label>
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+</div>
 
 	<div class="card col-11 mx-auto mt-4">
     <div class="card-body">
@@ -11,39 +15,41 @@
       <th scope="col">Title</th>
       <th scope="col">Description</th>
       <th scope="col">Blog Date</th>
+      <th scope="col">Videos/Images</th>
       <th scope="col">Edit</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
   <tbody>
+
+
+    {% for blogs in data %}
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
-      <td>@mdo</td>
+      <td>{{ blogs.title }}</td>
+      <td><a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
+      <td>{{ blogs.created_date }}</td>
+      <td><a data-toggle="modal" data-target="#videos"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
       <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
       <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Mark</td>
-      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
-      <td>@mdo</td>
-   
-      <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
-      <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Mark</td>
-      <td>Otto <a data-toggle="modal" data-target="#description"> <span class="iconify ml-2" data-icon="carbon:view-filled" data-inline="false" data-width="20px" data-height="20px"></span></a></td>
-      <td>@mdo</td>
-  
-      <td><a data-toggle="modal" data-target="#edit"> <span class="iconify" data-icon="fa-solid:edit" data-inline="false"></span></a></td>
-      <td><span class="iconify" data-icon="fluent:delete-dismiss-24-filled" data-inline="false" data-width="22px" data-height="22px"></span></td>
-    </tr>
+    {% endfor %}
+
+
   </tbody>
 </table>
+
+ <ul class="pagination justify-content-end">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
 
 {# Modal for Event Description #}
 
@@ -87,9 +93,54 @@
 
 
 
+
+  {# Modal for Blogs Videos #}
+
+
+  <div class="modal modal-center" id="videos" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h6 class="modal-title mt-0 text-center">BLOGS VIDEOS</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <video width="320" height="240" controls>
+              <source src="https://youtu.be/5qap5aO4i9A" type="video/mp4">
+              <source src="https://youtu.be/5qap5aO4i9A" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            </div>
+             <div class="col">
+              <video width="320" height="240" controls>
+              <source src="https://youtu.be/5qap5aO4i9A" type="video/mp4">
+              <source src="https://youtu.be/5qap5aO4i9A" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            </div>
+             <div class="col">
+              <video width="320" height="240" controls>
+              <source src="https://youtu.be/5qap5aO4i9A" type="video/mp4">
+              <source src="https://youtu.be/5qap5aO4i9A" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   {# Modal for Edit Events #}
 
-  <div class="modal fade bs-example-modal-center" id="edit" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="fade bs-example-modal-center" id="edit" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header bg-primary text-white">
