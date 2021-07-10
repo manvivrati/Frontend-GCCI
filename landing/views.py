@@ -97,7 +97,7 @@ def testimonials(request):
 	if request.method == 'POST':
 
 		if request.POST['submit'] == 'client':
-  #    		 
+
 			name = request.POST['name']
 			designation = request.POST['designation']
 			company = request.POST['companyname']
@@ -124,7 +124,7 @@ def testimonials(request):
 				pass
 
 		if request.POST['submit'] == 'organization':
-  #    		 
+
 			name = request.POST['name']
 			designation = request.POST['designation']
 			company = request.POST['companyname']
